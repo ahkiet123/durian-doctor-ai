@@ -1,0 +1,100 @@
+# ĐỒ ÁN TỐT NGHIỆP: HỆ THỐNG AI CHẨN ĐOÁN BỆNH SẦU RIÊNG & TƯ VẤN ĐIỀU TRỊ (DURIAN DOCTOR)
+
+## 1. TỔNG QUAN DỰ ÁN (Project Overview)
+Xây dựng ứng dụng tích hợp (All-in-One) hỗ trợ nông dân trồng sầu riêng với 3 tính năng cốt lõi:
+1.  **Chẩn đoán hình ảnh (Vision AI):** Nhận diện chính xác 10 loại bệnh trên Lá, Thân và Trái.
+2.  **Giải thích quyết định (Explainable AI):** Sử dụng **Heatmap (Bản đồ nhiệt)** để chỉ ra vùng bệnh trên ảnh, giúp người dùng hiểu tại sao AI đưa ra kết quả đó (thay vì chỉ hiện tên bệnh).
+3.  **Tư vấn thông minh (AI Chatbot):** Hỏi đáp tự nhiên, cung cấp phác đồ điều trị và tên thuốc bảo vệ thực vật (sử dụng công nghệ RAG).
+
+---
+
+## 2. MÔI TRƯỜNG PHÁT TRIỂN (Development Environment)
+Dự án được triển khai trên môi trường **Local Desktop** để tận dụng sức mạnh phần cứng sẵn có.
+
+* **Hệ điều hành:** Windows 10/11.
+* **Phần cứng:**
+    * RAM: 16GB.
+    * GPU: **NVIDIA GeForce RTX 3050Ti (4GB VRAM)** - *Sử dụng để huấn luyện mô hình.*
+* **Công cụ quản lý:** VS Code + Anaconda (Miniconda).
+* **Framework chính:** **PyTorch** (Hỗ trợ GPU CUDA trên Windows).
+
+---
+
+## 3. CHIẾN LƯỢC DỮ LIỆU (Data Strategy)
+Áp dụng chiến lược **Cross-Domain Evaluation** (Kiểm thử chéo vùng miền) để đảm bảo tính khách quan.
+
+### 3.1. Bộ dữ liệu Huấn luyện (Training Set)
+* **Nguồn:** [Tan Nguyen - Mendeley Data (Version 1)](https://data.mendeley.com/datasets/mhjwyb5p48/1)
+* **Dung lượng:** ~5 GB (4.000 ảnh gốc chất lượng cao).
+* **Nơi thu thập:** **Vĩnh Long (Miền Tây)**.
+* **Phân lớp (11 Classes):**
+    * *Lá:* Anthracnose, Sooty mold, Yellow leaf, Thrips, **Healthy (bổ sung)**.
+    * *Thân:* Stem cracking (Nứt thân xì mủ), Stem blight, Canker, Pink disease.
+    * *Trái:* Fruit rot (Thối trái), Mealybug (Rệp sáp).
+* **Vai trò:** Dùng 80% để Train, 20% để Validation.
+
+### 3.2. Bộ dữ liệu Kiểm thử (External Test Set)
+* **Nguồn:** 1. [Kaggle - DurianLeafSubset2](https://www.kaggle.com/datasets/nguynphancminh/durianleafsubset2) (Ảnh Tây Nguyên).
+    2. **Ảnh tự thu thập thực tế tại Đồng Nai** (Ảnh do tác giả tự chụp).
+* **Vai trò:** Chỉ dùng để **TEST ĐỘC LẬP** sau khi mô hình đã hoàn thiện.
+* **Mục tiêu:** Chứng minh khả năng tổng quát hóa (Generalization) của mô hình trên vùng địa lý mới.
+
+---
+
+## 4. KIẾN TRÚC CÔNG NGHỆ (Tech Stack)
+
+### 4.1. Vision AI (Deep Learning)
+* **Framework:** **PyTorch**.
+* **Mô hình (Backbone):** **MobileNetV2**.
+    * *Lý do:* Tối ưu hóa cho VRAM 4GB của RTX 3050Ti, tốc độ suy luận (Inference) nhanh.
+* **Kỹ thuật:** Transfer Learning (tinh chỉnh từ weights ImageNet).
+* **Input:** Ảnh resize về kích thước **224x224** pixels.
+* **Optimizer:** AdamW. Loss Function: CrossEntropyLoss.
+
+### 4.2. Explainable AI (XAI) - *Mới cập nhật*
+* **Kỹ thuật:** **Grad-CAM** (Gradient-weighted Class Activation Mapping).
+* **Thư viện:** `pytorch-grad-cam`.
+* **Mục đích:** Trực quan hóa vùng quan tâm của mô hình (Heatmap) đè lên ảnh gốc, giúp xác định vị trí vết bệnh mà không cần gán nhãn thủ công (Bounding Box).
+
+### 4.3. Chatbot RAG (NLP)
+* **LLM API:** **Google Gemini 1.5 Flash** (Miễn phí, tốc độ cao).
+* **Kiến trúc RAG:**
+    * *Vector Database:* **ChromaDB** (Lưu trữ cục bộ).
+    * *Embeddings:* Google Generative AI Embeddings.
+* **Dữ liệu tri thức:** File text tổng hợp từ Cục Bảo vệ thực vật.
+
+### 4.4. Ứng dụng (Frontend)
+* **Framework:** **Streamlit**.
+* **Luồng chạy:** Hybrid.
+    * Vision AI & Grad-CAM chạy Offline (trên máy người dùng).
+    * Chatbot chạy Online (gọi API).
+
+---
+
+## 5. CẤU TRÚC THƯ MỤC DỰ ÁN (Project Structure)
+Tổ chức theo chuẩn VS Code Project:
+
+```text
+My_Graduation_Thesis/
+│
+├── data/
+│   ├── mendeley_dataset/       # (5GB) Ảnh gốc chưa xử lý
+│   ├── processed_train_224/    # (Quan trọng) Ảnh đã resize 224x224 để nạp vào GPU
+│   └── test_external_Kaggle/   # (1GB) Ảnh test độc lập
+│
+├── knowledge_base/
+│   ├── tai_lieu_nong_nghiep.txt
+│   └── chroma_db/              # Database vector lưu trữ cục bộ
+│
+├── src/                        # Source code chính
+│   ├── dataset.py              # Class load dữ liệu PyTorch
+│   ├── train.py                # Script huấn luyện mô hình
+│   ├── evaluate.py             # Script đánh giá trên tập Test
+│   ├── gradcam_utils.py        # (Mới) Code xử lý Heatmap
+│   └── app.py                  # Giao diện Streamlit
+│
+├── models/
+│   └── best_mobilenet_v2.pth   # File model PyTorch đã train xong
+│
+├── requirements.txt            # Thêm: pytorch-grad-cam
+└── README.md                   # File tài liệu này

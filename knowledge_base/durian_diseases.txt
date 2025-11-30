@@ -1,0 +1,683 @@
+# TÀI LIỆU KIẾN THỨC VỀ BỆNH SẦU RIÊNG
+# Nguồn: Tổng hợp từ Cục Bảo vệ Thực vật, Viện Cây ăn quả Miền Nam
+
+
+=============================================================================
+## QUY TẮC AN TOÀN KHI SỬ DỤNG THUỐC BẢO VỆ THỰC VẬT
+=============================================================================
+LƯU Ý VỀ LIỀU LƯỢNG THUỐC GỐC ĐỒNG (COPPER):
+1. Dạng phun lá: Chỉ pha loãng 1g - 3g/lít nước (Ví dụ: COC 85, Champion, Norshield). Nếu phun quá liều (>4g/lít) sẽ gây cháy lá, rụng bông.
+2. Dạng quét thân: Có thể pha đậm đặc 20g - 30g/lít nước nhưng chỉ được quét lên vết bệnh ở thân/cành già. Tuyệt đối không phun liều này lên lá.
+
+LƯU Ý VỀ THUỐC TRỪ SÂU:
+- Nên phun lúc trời mát (sáng sớm hoặc chiều tối).
+- Luân phiên hoạt chất để tránh kháng thuốc.
+
+=============================================================================
+## 1. BỆNH THÁN THƯ (ANTHRACNOSE)
+=============================================================================
+- Tác nhân: Nấm Colletotrichum gloeosporioides
+- Bộ phận bị hại: Lá, hoa, trái non và trái chín
+
+### Triệu chứng:
+- Trên lá: Vết bệnh hình tròn hoặc bất định, màu nâu đen, có viền vàng nhạt
+- Trên trái: Vết bệnh màu nâu đen, lõm xuống, có thể có lớp bào tử màu hồng cam khi ẩm ướt
+- Bệnh phát triển mạnh trong mùa mưa, độ ẩm cao
+
+### Thuốc điều trị:
+1. Antracol 70WP: 2-3g/lít nước, phun 7-10 ngày/lần
+2. Score 250EC: 0.5ml/lít nước
+3. Amistar Top 325SC: 0.5ml/lít nước
+4. Carbendazim 50WP: 1-2g/lít nước
+5. Mancozeb 80WP: 2-3g/lít nước
+
+### Biện pháp phòng trừ:
+- Cắt tỉa cành lá bệnh, thu gom đốt tiêu hủy
+- Không tưới nước lên tán lá vào chiều tối
+- Bón phân cân đối, tăng cường Kali và Phospho
+- Phun phòng định kỳ trước và sau mùa mưa
+
+=============================================================================
+## 2. BỆNH LOÉT THÂN (CANKER) / THỐI GỐC CHẢY NHỰA
+=============================================================================
+- Tác nhân: Nấm Phytophthora palmivora
+- Bộ phận bị hại: Gốc, thân, cành, rễ
+
+### Triệu chứng:
+- Vết loét trên thân, vỏ cây nứt nẻ
+- Chảy nhựa (mủ) màu nâu đỏ hoặc nâu đen
+- Vết bệnh lan rộng theo chiều dọc và ngang thân
+- Lá vàng, héo, cây suy yếu và chết dần
+
+### Thuốc điều trị:
+1. Agrifos 400: 5-10ml/lít nước (phun hoặc quét đậm đặc lên vết bệnh)
+2. Aliette 80WP: 2.5g/lít nước
+3. Ridomil Gold 68WG: 2g/lít nước
+4. Metalaxyl 25WP: 2g/lít nước
+5. Phosphonate (Fungiphote): 5ml/lít nước
+
+### Biện pháp phòng trừ:
+- Cạo sạch phần vỏ bị loét đến phần gỗ khỏe
+- Quét thuốc đậm đặc lên vết thương 2-3 lần, cách nhau 7 ngày
+- Quét vôi + Đồng sunfat lên gốc thân định kỳ
+- Thoát nước tốt, tránh ngập úng
+- Không để nước tưới đọng ở gốc cây
+
+=============================================================================
+## 3. BỆNH THỐI TRÁI (FRUIT ROT)
+=============================================================================
+- Tác nhân: Nấm Phytophthora palmivora, Lasiodiplodia theobromae
+- Bộ phận bị hại: Trái (đặc biệt trái gần đất hoặc tiếp xúc ẩm)
+
+### Triệu chứng:
+- Trái có vết thâm đen, mềm nhũn
+- Lan nhanh khi thời tiết ẩm ướt
+- Bốc mùi hôi thối đặc trưng
+- Có thể thấy lớp nấm trắng hoặc xám trên vết bệnh
+
+### Thuốc điều trị:
+1. Aliette 80WP: 2.5g/lít nước
+2. Ridomil Gold 68WG: 2g/lít nước  
+3. Agrifos 400: 5ml/lít nước
+4. Antracol 70WP: 2-3g/lít nước
+
+### Biện pháp phòng trừ:
+- Thu gom trái bệnh tiêu hủy ngay, không để trong vườn
+- Phun thuốc phòng trước mùa mưa
+- Tránh để trái chạm đất
+- Thoát nước tốt, cắt cỏ dưới tán cây
+- Bao trái khi trái còn nhỏ
+
+=============================================================================
+## 4. RỆP SÁP (MEALYBUG)
+=============================================================================
+- Tác nhân: Côn trùng Planococcus sp., Pseudococcus sp.
+- Bộ phận bị hại: Lá, cành non, trái, rễ
+
+### Triệu chứng:
+- Lớp phấn trắng (sáp) bám trên lá, cành, trái
+- Lá vàng, cong queo, rụng sớm
+- Cây còi cọc, sinh trưởng kém
+- Thường kèm theo nấm muội đen (do rệp tiết mật ngọt)
+- Kiến thường có mặt (nuôi và bảo vệ rệp)
+
+### Thuốc điều trị:
+1. Movento 150OD: 0.5ml/lít nước
+2. Confidor 200SL: 0.5ml/lít nước
+3. Admire 050EC: 1ml/lít nước
+4. Applaud 10WP: 1-2g/lít nước (diệt trứng và ấu trùng)
+5. Dầu khoáng SK Enspray 99: 5ml/lít nước
+
+### Biện pháp phòng trừ:
+- Phun nước rửa sạch rệp trước khi phun thuốc
+- Diệt kiến (vì kiến nuôi rệp)
+- Cắt bỏ cành bị nhiễm nặng
+- Phun thuốc 2-3 lần cách nhau 7 ngày
+- Thả thiên địch: bọ rùa, ong ký sinh
+
+=============================================================================
+## 5. BỆNH HỒNG (PINK DISEASE)
+=============================================================================
+- Tác nhân: Nấm Erythricium salmonicolor (Corticium salmonicolor)
+- Bộ phận bị hại: Cành, thân
+
+### Triệu chứng:
+- Lớp nấm màu hồng/trắng hồng bao phủ cành
+- Vỏ cây bong tróc, nứt nẻ
+- Cành bị bệnh khô dần và chết
+- Lá trên cành bệnh vàng, héo rụng
+- Thường xuất hiện mùa mưa, độ ẩm cao
+
+### Thuốc điều trị:
+1. Validacin 5SL: 1-2ml/lít nước
+2. Carbendazim 50WP: 1-2g/lít nước
+3. Copper Hydroxide: 2-3g/lít nước
+4. Bordeaux 1% (Boóc-đô): quét lên cành bệnh
+
+### Biện pháp phòng trừ:
+- Cắt bỏ cành bệnh, đốt tiêu hủy
+- Quét thuốc hoặc vôi lên vết cắt
+- Tạo thông thoáng cho vườn
+- Quét vôi gốc cây đầu mùa mưa
+
+=============================================================================
+## 6. NẤM MUỘI ĐEN (SOOTY MOLD)
+=============================================================================
+- Tác nhân: Nấm Capnodium sp., Meliola sp.
+- Nguyên nhân gốc: Do rệp, rầy tiết mật ngọt tạo môi trường cho nấm phát triển
+
+### Triệu chứng:
+- Lớp bồ hóng đen (như muội than) phủ trên mặt lá
+- Lá không quang hợp được, cây suy yếu
+- Thường thấy kèm rệp, rầy trên cây
+
+### Thuốc điều trị:
+1. Diệt côn trùng chích hút trước (rệp, rầy)
+2. Anvil 5SC: 0.5ml/lít nước
+3. Tilt Super 300EC: 0.5ml/lít nước
+4. Dầu khoáng: rửa sạch lớp muội
+
+### Biện pháp phòng trừ:
+- Phun nước áp lực mạnh rửa sạch bồ hóng
+- Diệt côn trùng chích hút (nguồn gốc vấn đề)
+- Tỉa cành tạo thông thoáng
+- Bón phân cân đối, tránh thừa đạm
+
+=============================================================================
+## 7. BỆNH CHÁY THÂN (STEM BLIGHT)
+=============================================================================
+- Tác nhân: Nấm Lasiodiplodia theobromae
+- Bộ phận bị hại: Thân, cành
+
+### Triệu chứng:
+- Vỏ thân khô, nứt nẻ
+- Chuyển màu nâu đen
+- Gỗ bên trong bị mục
+- Cành khô dần và chết
+
+### Thuốc điều trị:
+1. Carbendazim 50WP: 1-2g/lít nước
+2. Topsin M 70WP: 1g/lít nước
+3. Score 250EC: 0.5ml/lít nước
+4. Bordeaux 1%: quét lên vết bệnh
+
+### Biện pháp phòng trừ:
+- Cạo bỏ phần vỏ bệnh đến gỗ khỏe
+- Quét thuốc đậm đặc lên vết thương
+- Quét vôi bảo vệ gốc thân
+- Tránh gây vết thương cơ giới khi chăm sóc
+
+=============================================================================
+## 8. NỨT THÂN XÌ MỦ (GUMMOSIS)
+=============================================================================
+- Tác nhân: Nấm Phytophthora palmivora
+- Bộ phận bị hại: Gốc, thân chính
+
+### Triệu chứng:
+- Vỏ thân nứt theo chiều dọc
+- Xì nhựa (mủ) màu nâu đỏ, sau chuyển nâu đen
+- Mùi chua đặc trưng
+- Vết bệnh lan rộng, vỏ bong tróc
+- Cây suy yếu, lá vàng úa
+
+### Thuốc điều trị:
+1. Agrifos 400: pha đậm đặc 10ml/lít, quét trực tiếp
+2. Aliette 80WP: 3-4g/lít nước
+3. Ridomil Gold 68WG: 2-3g/lít nước
+4. Phosphonate: tiêm thân hoặc tưới gốc
+
+### Biện pháp phòng trừ:
+- Cạo sạch vết loét đến phần gỗ khỏe
+- Quét thuốc đậm đặc 2-3 lần cách 7 ngày
+- Quét vôi + Đồng sunfat lên gốc định kỳ
+- Thoát nước tốt, tránh để gốc ngập nước
+- Không tưới nước trực tiếp vào gốc
+- Tránh xới xáo làm đứt rễ
+
+=============================================================================
+## 9. BỌ TRĨ (THRIPS)
+=============================================================================
+- Tác nhân: Côn trùng Scirtothrips dorsalis, Thrips sp.
+- Bộ phận bị hại: Lá non, đọt non, hoa
+
+### Triệu chứng:
+- Lá non quăn queo, biến dạng
+- Có vết bạc/nâu trên mặt lá
+- Lá cứng giòn, không phát triển được
+- Hoa bị hại rụng sớm
+- Thường xuất hiện mùa khô
+
+### Thuốc điều trị:
+1. Regent 800WG: 0.5g/lít nước
+2. Confidor 200SL: 0.5ml/lít nước
+3. Radiant 60SC: 0.5ml/lít nước
+4. Abamectin 1.8EC: 0.5ml/lít nước
+5. Dầu khoáng: 5ml/lít nước
+
+### Biện pháp phòng trừ:
+- Phun thuốc vào sáng sớm hoặc chiều mát (bọ trĩ hoạt động ban ngày)
+- Phun 2-3 lần cách nhau 5-7 ngày
+- Luân phiên thuốc tránh kháng thuốc
+- Vệ sinh cỏ dại xung quanh gốc
+- Tưới đủ nước mùa khô
+
+=============================================================================
+## 10. VÀNG LÁ (YELLOW LEAF)
+=============================================================================
+- Nguyên nhân: Nhiều nguyên nhân khác nhau
+
+### Các nguyên nhân chính:
+1. Thiếu dinh dưỡng (đặc biệt Đạm, Sắt, Kẽm, Magie)
+2. Thối rễ do nấm Phytophthora
+3. Ngập úng kéo dài
+4. Tuyến trùng hại rễ
+5. Thiếu/thừa nước
+6. pH đất không phù hợp
+
+### Cách xác định nguyên nhân:
+- Thiếu Đạm (N): Lá già vàng trước, vàng đều
+- Thiếu Sắt (Fe): Lá non vàng, gân lá còn xanh
+- Thiếu Kẽm (Zn): Lá nhỏ, vàng loang lổ
+- Thối rễ: Kiểm tra rễ có mùi thối, màu nâu đen
+- Ngập úng: Đất ướt sũng, rễ thiếu oxy
+
+### Thuốc và phân bón điều trị:
+1. Thiếu dinh dưỡng:
+   - NPK 16-16-8 hoặc 20-20-15: bón gốc
+   - Phân bón lá vi lượng: Fetrilon, Zinc Chelate
+   - Humic acid: cải tạo đất
+
+2. Thối rễ:
+   - Aliette 80WP: tưới gốc 2-3g/lít
+   - Ridomil Gold: tưới gốc 2g/lít
+
+3. Ngập úng:
+   - Đào rãnh thoát nước
+   - Bón vôi cải tạo đất
+
+### Biện pháp phòng trừ:
+- Bón phân đầy đủ, cân đối NPK + vi lượng
+- Kiểm tra pH đất, duy trì 5.5-6.5
+- Cải thiện thoát nước
+- Kiểm tra rễ định kỳ
+- Phun phân bón lá bổ sung khi cần
+
+=============================================================================
+## 11. LÁ KHỎE MẠNH (HEALTHY LEAF)
+=============================================================================
+### Đặc điểm lá sầu riêng khỏe:
+- Màu xanh đậm, bóng mượt
+- Phiến lá phẳng, không cong queo
+- Không có đốm, vết bệnh
+- Kích thước bình thường theo tuổi lá
+
+### Chăm sóc duy trì cây khỏe:
+1. Bón phân:
+   - Cây 1-3 năm: NPK 16-16-8, 0.5-1kg/cây/lần, 4 lần/năm
+   - Cây cho trái: NPK 15-15-15 + 13-13-21, 2-5kg/cây/lần
+   - Phân hữu cơ: 20-50kg/cây/năm
+
+2. Tưới nước:
+   - Mùa khô: 2-3 ngày/lần
+   - Mùa mưa: thoát nước tốt
+   - Tưới nhỏ giọt hoặc tưới gốc, tránh tưới lên tán
+
+3. Cắt tỉa:
+   - Tỉa cành sâu bệnh, cành vượt
+   - Tạo tán thông thoáng
+   - Tỉa sau thu hoạch
+
+4. Phòng bệnh:
+   - Phun thuốc phòng định kỳ trước mùa mưa
+   - Quét vôi gốc 2 lần/năm
+   - Vệ sinh vườn sạch sẽ
+
+=============================================================================
+## LỊCH CHĂM SÓC SẦU RIÊNG THEO MÙA
+=============================================================================
+
+### Mùa khô (tháng 11 - tháng 4):
+- Tưới nước đều đặn
+- Phòng trừ bọ trĩ, rệp sáp
+- Xử lý ra hoa (nếu đủ tuổi)
+- Bón phân kích thích ra hoa
+
+### Mùa mưa (tháng 5 - tháng 10):
+- Thoát nước tốt
+- Phun phòng nấm bệnh (Phytophthora, Anthracnose)
+- Quét vôi gốc
+- Bón phân nuôi trái (nếu có trái)
+
+### Sau thu hoạch:
+- Cắt tỉa tạo tán
+- Bón phân phục hồi cây
+- Phun thuốc phòng bệnh
+- Vệ sinh vườn
+
+=============================================================================
+## THÔNG TIN BỔ SUNG
+=============================================================================
+
+### Các giống sầu riêng phổ biến tại Việt Nam:
+1. Monthong (Thái Lan): Cơm vàng, hạt lép, thơm ngọt
+2. Ri6: Giống Việt Nam, cơm vàng, ngọt béo
+3. Chuồng bò: Cơm dày, ít xơ
+4. Musang King (Malaysia): Cơm vàng đậm, đắng nhẹ, giá cao
+
+### Vùng trồng sầu riêng chính:
+- Miền Tây: Tiền Giang, Bến Tre, Vĩnh Long
+- Đông Nam Bộ: Đồng Nai, Bình Dương, Bình Phước
+- Tây Nguyên: Đắk Lắk, Lâm Đồng, Gia Lai
+
+### Liên hệ hỗ trợ kỹ thuật:
+- Trung tâm Khuyến nông địa phương
+- Chi cục Bảo vệ Thực vật tỉnh
+- Viện Cây ăn quả Miền Nam: 0273.3822.275
+
+=============================================================================
+## KỸ THUẬT BÓN PHÂN CHO SẦU RIÊNG (THEO ĐỘ TUỔI)
+=============================================================================
+
+### 1. Giai đoạn Kiến thiết cơ bản (Cây con từ 1 - 3 năm tuổi)
+Mục tiêu: Tập trung phát triển bộ rễ và cơi đọt (thân, cành, lá).
+
+* **Loại phân ưu tiên:** Phân có hàm lượng Đạm (N) và Lân (P) cao. Công thức NPK: 20-20-15, 16-16-8 hoặc 20-10-10.
+* **Liều lượng và Tần suất:**
+    * **Năm 1:** Dùng phân NPK 20-10-10 hoặc DAP. Liều lượng: 100g – 200g/gốc/lần. Bón 4-6 lần/năm (mỗi khi cây chuẩn bị ra cơi đọt mới). Kết hợp tưới Humic acid để kích rễ.
+    * **Năm 2:** Tăng lượng phân lên 300g – 500g/gốc/lần. Bón 4 lần/năm.
+    * **Năm 3:** Chuẩn bị để cây sung sức làm trái bói. Liều lượng: 0.5kg – 1kg/gốc/lần.
+* **Phân hữu cơ:** Bắt buộc bón 1 lần vào đầu mùa mưa. Lượng bón: 10-20kg phân chuồng hoai mục (hoặc 3-5kg phân hữu cơ nở)/gốc.
+
+### 2. Giai đoạn Kinh doanh (Cây cho trái từ năm thứ 4 trở đi)
+Quy trình bón phân chia theo 4 giai đoạn sinh lý của cây:
+
+* **Giai đoạn 1: Sau thu hoạch (Phục hồi cây)**
+    * Mục đích: Giúp cây lại sức, ra đọt mới.
+    * Phân bón: NPK có đạm cao (30-10-10, 20-10-10) + Phân hữu cơ (20-30kg/gốc).
+    * Vi lượng: Phun bổ sung Magie, Kẽm qua lá để bộ lá xanh dày.
+
+* **Giai đoạn 2: Tạo mầm hoa (Trước ra hoa 1-2 tháng)**
+    * Mục đích: Ức chế đọt non, phân hóa mầm hoa.
+    * Phân bón: Phân Lân cao (Lân nung chảy hoặc Super Lân) bón gốc.
+    * Phun lá: Tạo mầm bằng MKP (0-52-34) hoặc 10-60-10.
+
+* **Giai đoạn 3: Nuôi hoa và Xả nhụy**
+    * Mục đích: Hoa mập, phấn khỏe, đậu trái tốt.
+    * Phân bón: NPK cân bằng (15-15-15 hoặc 16-16-16).
+    * Lưu ý: Bổ sung Bo (Boron) trước khi hoa nở 1 tuần để tăng tỷ lệ đậu trái. Tuyệt đối không bón phân Đạm cao lúc này vì sẽ gây rụng hoa.
+
+* **Giai đoạn 4: Nuôi trái (Chạy trái)**
+    * Mục đích: Trái lớn nhanh, cơm vàng, không bị sượng.
+    * Trái nhỏ (bằng trứng gà): Bón NPK 12-12-17 hoặc 15-15-15.
+    * Trái lớn (1 tháng trước thu hoạch): Bón NPK có Kali cao (12-11-18 hoặc 15-5-20) để lên màu cơm, tăng độ ngọt. Tuyệt đối không bón phân có chứa Clo (Cl) vì làm sượng cơm.
+
+=============================================================================
+## KỸ THUẬT TƯỚI NƯỚC CHO SẦU RIÊNG
+=============================================================================
+
+### 1. Nhu cầu nước theo độ tuổi
+* **Cây con (1-3 năm):** Cần giữ ẩm thường xuyên nhưng không ngập úng.
+    * Mùa khô: Tưới 2-3 ngày/lần. Mỗi lần 20-40 lít nước/cây. Phủ gốc bằng rơm rạ để giữ ẩm.
+* **Cây kinh doanh (4 năm+):**
+    * Mùa khô: Tưới định kỳ 3-5 ngày/lần. Lượng nước tăng theo tán cây (khoảng 100-200 lít/cây/lần).
+
+### 2. Tưới nước giai đoạn Làm bông - Nuôi trái (Cực kỳ quan trọng)
+* **Giai đoạn xử lý ra hoa (Xiết nước):** Cần cắt nước hoàn toàn (khô hạn) từ 15-20 ngày để cây bị "sốc" và phân hóa mầm hoa. Khi mắt cua ra dài 2-3cm thì bắt đầu tưới lại (tưới nhấp nhẹ rồi tăng dần).
+* **Giai đoạn xổ nhụy:** Giảm lượng nước tưới xuống còn 1/3 so với bình thường. Nếu tưới nhiều quá cây sẽ ra đọt non cạnh tranh dinh dưỡng làm rụng hoa.
+* **Giai đoạn nuôi trái:** Cần tưới đủ nước và đều đặn. Nếu để cây bị khô rồi tưới dồn dập -> Sẽ bị Nứt Gai hoặc Sốc nước rụng trái.
+
+=============================================================================
+## KỸ THUẬT TỈA CÀNH, TẠO TÁN (PRUNING)
+=============================================================================
+
+### Nguyên tắc chung: "Cành đực không mang trái, cành cái mới mang trái"
+* **Khi nào tỉa?**
+    * **Lần 1 (Quan trọng nhất):** Ngay sau khi thu hoạch. Cắt tỉa triệt để cành bệnh, cành khô, cành tăm.
+    * **Lần 2:** Trước khi làm bông. Tỉa nhẹ các cành chéo, cành rợp bóng.
+    * **Lần 3:** Giai đoạn nuôi trái (tỉa bơi/tỉa chồi). Loại bỏ các chồi non mọc từ thân chính để dinh dưỡng tập trung nuôi trái.
+
+### Các loại cành cần cắt bỏ:
+1.  **Cành mọc sát đất:** Cách mặt đất dưới 0.8m - 1m cần cắt bỏ để tránh nấm bệnh từ đất (Phytophthora) bắn lên.
+2.  **Cành tăm (cành ốm yếu):** Các cành nhỏ mọc bên trong tán, không nhận được ánh sáng.
+3.  **Cành vượt (Cành đứng):** Cành mọc thẳng đứng lên trời, cạnh tranh với ngọn chính.
+4.  **Cành đan chéo:** Cành mọc xuyên qua tán cây khác.
+5.  **Cành sâu bệnh:** Cắt và đem đốt tiêu hủy ngay.
+
+=============================================================================
+## CANH TÁC SẦU RIÊNG TRÊN ĐẤT ĐỎ BAZAN (TÂY NGUYÊN, ĐÔNG NAM BỘ)
+=============================================================================
+
+### Đặc điểm đất đỏ Bazan:
+* **Ưu điểm:** Tầng canh tác dày, thoát nước rất tốt (ít bị ngập úng), giàu sắt nhôm.
+* **Nhược điểm:** Dễ bị chua (pH thấp), khả năng giữ nước kém trong mùa khô, nghèo vi lượng (nếu canh tác lâu năm).
+
+### Lưu ý canh tác đặc biệt:
+1.  **Cải tạo pH đất (Bắt buộc):**
+    * Đất Bazan thường chua (pH 4.0 - 5.0). Sầu riêng cần pH 5.5 - 6.5.
+    * **Xử lý:** Bón vôi nông nghiệp (Vôi nung CaO hoặc Dolomite). Liều lượng: 2-3 kg/cây/năm. Bón vào đầu mùa mưa và cuối mùa mưa.
+2.  **Giữ ẩm mùa khô:**
+    * Do đất thoát nước nhanh, mùa khô cây dễ bị stress nhiệt.
+    * **Xử lý:** Tuyệt đối không làm sạch cỏ trắng vườn trong mùa khô. Cần để "cỏ giữ ẩm" (như cỏ trai, rau trai) hoặc phủ gốc bằng rơm rạ, xác bã thực vật dày 5-10cm.
+3.  **Bổ sung hữu cơ:**
+    * Đất Bazan lâu năm dễ bị chai cứng. Cần bón phân hữu cơ (phân gà, phân bò ủ hoai) lượng lớn hàng năm (20-50kg/cây) để làm đất tơi xốp.
+
+=============================================================================
+## KỸ THUẬT TỈA TRÁI (FRUIT THINNING)
+=============================================================================
+* **Tại sao phải tỉa trái?** Nếu để quá nhiều trái, cây sẽ bị suy kiệt (gãy cành, chết cây sau thu hoạch), trái nhỏ, méo mó, bán không được giá.
+* **Thời điểm tỉa:**
+    * **Lần 1 (Trái bằng quả trứng gà):** Tỉa bỏ trái méo, trái sâu bệnh, trái mọc ở vị trí yếu (đầu cành).
+    * **Lần 2 (Trái bằng cái bát/tô):** Chọn lại những trái đẹp, phân bố đều.
+    * **Lần 3 (Định hình năng suất):** Chỉ giữ lại số lượng trái phù hợp sức cây.
+* **Số lượng trái tham khảo (Giống Monthong/Ri6):**
+    * Cây năm thứ 4-5 (Bói): Giữ 5 - 10 trái.
+    * Cây năm thứ 6-8: Giữ 40 - 60 trái.
+    * Cây trưởng thành (>10 năm): Có thể giữ 80 - 100 trái (tùy độ sung của cây).
+
+=============================================================================
+## HIỆN TƯỢNG SƯỢNG CƠM - CHÁY MÚI (RỐI LOẠN SINH LÝ)
+=============================================================================
+Đây là vấn đề đau đầu nhất, đặc biệt với giống Monthong (DONA). Trái nhìn bên ngoài đẹp nhưng bên trong bị cứng, nhạt, hoặc thâm đen -> Bị thương lái dạt, mất giá.
+
+### 1. Hiện tượng "Sượng cơm" (Cơm cứng, sượng trân)
+* **Nguyên nhân:**
+    * Do bón thừa phân Đạm (N) hoặc Clorua (Cl) giai đoạn cuối.
+    * Do cây đi đọt non mạnh trong lúc đang nuôi trái (cạnh tranh dinh dưỡng).
+    * Do tưới nước quá nhiều trước thu hoạch.
+* **Khắc phục:**
+    * Chặn đọt triệt để trong giai đoạn nuôi trái (dùng MKP hoặc Kali nồng độ cao phun lá).
+    * Tuyệt đối không dùng phân Kali Clorua (KCl) bón cho sầu riêng. Phải dùng Kali Sunphat (K2SO4) hoặc Kali Nitrat (KNO3).
+    * Cắt nước hoặc giảm nước tối đa 15-20 ngày trước thu hoạch.
+
+### 2. Hiện tượng "Cháy múi" (Múi bị thâm đen, khô)
+* **Nguyên nhân:** Thiếu Bo (Boron) và Canxi trong giai đoạn trái non. Mất cân bằng nước (sốc nước).
+* **Khắc phục:** Phun Canxi-Bo định kỳ 10-15 ngày/lần từ lúc đậu trái đến khi trái bằng cái bát.
+
+=============================================================================
+## KỸ THUẬT CHỐNG RỤNG TRÁI NON (PHYSIOLOGICAL FRUIT DROP)
+=============================================================================
+Sầu riêng thường có các đợt rụng trái sinh lý rất mạnh (khi trái bằng ngón tay cái, bằng trứng gà, bằng cái bát). Nông dân cần can thiệp để giữ trái.
+
+### Nguyên nhân rụng:
+1.  **Cạnh tranh dinh dưỡng:** Cây ra đọt non -> Dinh dưỡng dồn nuôi lá -> Cây buông trái.
+2.  **Sốc nước:** Đang khô hạn gặp mưa lớn đột ngột -> Cây hút nước quá nhanh -> Rụng trái.
+3.  **Thiếu dinh dưỡng:** Cây không đủ sức nuôi nhiều trái.
+
+### Biện pháp xử lý "Chặn đọt - Giữ trái":
+* **Bước 1 (Nhận biết):** Thấy búp đọt non vừa nhú (mũi giáo) là phải xử lý ngay.
+* **Bước 2 (Phun chặn):** Dùng MKP (0-52-34) nồng độ 1-2kg/200 lít nước hoặc các loại thuốc chặn đọt chuyên dụng. Phun ướt đều tán lá (tránh phun vào trái).
+* **Bước 3 (Dìu đọt - nếu đọt đã lỡ ra mạnh):** Phun vi lượng + Kali hữu cơ để lá mau già, giảm cạnh tranh với trái.
+* **Chống sốc nước:** Trong mùa nắng, phải tưới giữ ẩm thường xuyên. Nếu dự báo có mưa lớn, phải tưới nước trước cơn mưa để cây không bị sốc khi nhận nước mưa đột ngột.
+
+=============================================================================
+## SÂU HẠI QUAN TRỌNG KHÁC (NGOÀI BỌ TRĨ & RỆP SÁP)
+=============================================================================
+
+### 1. Nhện Đỏ (Red Mites) - "Sát thủ mùa khô"
+* **Thời điểm:** Xuất hiện mạnh vào mùa nắng nóng, khô hạn.
+* **Triệu chứng:**
+    * Mặt trên lá chuyển sang màu vàng xám hoặc xám trắng (như phủ bụi).
+    * Soi kính lúp thấy những con nhỏ li ti màu đỏ di chuyển rất nhanh.
+    * Lá bị hại quang hợp kém, cây suy kiệt, trái không lớn nổi.
+* **Thuốc đặc trị:**
+    * Nhện đỏ kháng thuốc rất nhanh, bắt buộc phải luân phiên thuốc.
+    * Hoạt chất: Abamectin, Emamectin Benzoate, Pyridaben, Propargite (Comite), Fenpyroximate (Ortus).
+    * Phun ướt đẫm 2 mặt lá.
+
+### 2. Sâu đục thân / Xén tóc (Stem Borer)
+* **Nguy hiểm:** Ấu trùng đục vào trong thân cây, cắt đứt mạch dẫn nhựa -> Cây chết đứng bất ngờ.
+* **Dấu hiệu:** Trên thân có lỗ nhỏ, thấy mùn gỗ (phân sâu) đùn ra ngoài.
+* **Xử lý:**
+    * Dùng dây kẽm soi vào lỗ để giết sâu.
+    * Dùng bông tẩm thuốc sâu đậm đặc (như Chlorpyrifos hoặc Diazinon) nhét vào lỗ, lấy đất sét trám lại để xông hơi diệt sâu bên trong.
+
+=============================================================================
+## KỸ THUẬT THỤ PHẤN BỔ SUNG (HAND POLLINATION)
+=============================================================================
+Muốn sầu riêng trái tròn đều, đầy hộc, không bị méo mó (trái heo), bắt buộc phải thụ phấn nhân tạo, đặc biệt là giống Ri6 và Monthong.
+
+* **Thời điểm:** Từ 18:00 đến 21:00 đêm (khi hoa nở rộ và bao phấn nứt ra).
+* **Cách làm:**
+    * Dùng chổi lông mềm/cọ quét phấn từ bao phấn (nhị đực).
+    * Quét nhẹ lên nướm (nhụy cái) của chùm hoa khác (tốt nhất là dùng phấn cây khác dòng hoặc khác cây để tăng tỷ lệ đậu).
+* **Lợi ích:** Trái đậu nhiều hơn, gai đều, trái tròn đẹp, bán được giá loại 1.
+
+=============================================================================
+## KỸ THUẬT NHẬN BIẾT SẦU RIÊNG GIÀ (THU HOẠCH)
+=============================================================================
+Cắt sầu riêng đúng độ già quyết định chất lượng cơm. Cắt non (da lợn) là hỏng cả vụ.
+
+### Dấu hiệu nhận biết trái già:
+1.  **Thời gian:** Tính từ khi xổ nhụy.
+    * Ri6: 95 - 100 ngày.
+    * Monthong (Thái): 115 - 125 ngày.
+2.  **Màu vỏ:** Chuyển từ xanh tươi sang màu vàng nhạt hoặc xám (tùy giống). Gai nở to, đầu gai tà (không nhọn hoắt).
+3.  **Đường chỉ gai:** Các đường chỉ chạy dọc giữa các múi (đường rãnh) nứt ra rõ rệt.
+4.  **Âm thanh (Gõ):** Dùng cán dao gõ vào trái.
+    * Tiếng "Boong boong" (vang, cứng): Trái còn non hoặc cơm sượng.
+    * Tiếng "Bộp bộp" (trầm, đục): Cơm đã tách khỏi vỏ -> Trái đã già, đạt chuẩn.
+5.  **Tầng rời:** Phần tầng rời cuống (chỗ phình to) sưng lên, thấy rõ ngấn, nứt nhẹ.
+
+=============================================================================
+## CÁCH TRỒNG XEN CANH HIỆU QUẢ VỚI SẦU RIÊNG
+=============================================================================
+Trong những năm đầu (khi sầu riêng chưa khép tán), nên trồng xen để "lấy ngắn nuôi dài" và che bóng.
+
+* **Cây nên trồng:**
+    * **Cây Chuối:** Che bóng cho sầu riêng con rất tốt, giữ ẩm đất. Thân chuối sau thu hoạch làm phân bón.
+    * **Cây Ổi:** Thu hoạch nhanh, ít cạnh tranh dinh dưỡng tầng sâu. (Lưu ý phòng tuyến trùng rễ từ ổi).
+    * **Cây Mít:** Lớn nhanh, thu hoạch sớm. (Lưu ý mít hút dinh dưỡng rất mạnh, cần bón phân nhiều).
+* **Cây KHÔNG nên trồng:**
+    * Các loại cây cùng họ (như Bơ, Cacao) vì dễ lây bệnh nấm Phytophthora chéo cho nhau.
+
+
+=============================================================================
+## 13. QUY TRÌNH PHỤC HỒI CÂY SAU THU HOẠCH & CỨU CÂY SUY (REHABILITATION)
+=============================================================================
+
+### A. QUY TRÌNH PHỤC HỒI CHUẨN (CHO CÂY KHỎE SAU THU HOẠCH)
+Sau khi mang trái 4-5 tháng, cây sầu riêng bị mất sức rất nhiều (kiệt quệ dinh dưỡng). Cần thực hiện các bước theo thứ tự sau:
+
+1. **Bước 1: Rửa vườn (Ngay sau khi cắt trái xong)**
+    * Mục đích: Tẩy sạch rong rêu, nấm bệnh, nhện đỏ tồn dư trong vụ cũ.
+    * Hành động: Phun phủ toàn cây (trong thân, mặt dưới lá).
+    * Công thức: Gốc Đồng (Coc 85, Champion) hoặc Mancozeb + Thuốc sâu rầy phổ rộng.
+
+2. **Bước 2: Tỉa cành (Sau rửa vườn 3-5 ngày)**
+    * Mục đích: Loại bỏ cành vô hiệu (cành tăm, cành sâu bệnh, cuống trái cũ) để cây tập trung dinh dưỡng ra đọt mới.
+    * Hành động: Cắt tỉa thông thoáng, hạ ngọn nếu cây quá cao.
+
+3. **Bước 3: Cải tạo đất & Kích rễ (Quan trọng nhất)**
+    * Xới đất: Dùng cuốc xới nhẹ lớp đất mặt quanh tán (sâu 5-10cm) để phá váng, giúp đất thoáng khí (cung cấp Oxy cho rễ).
+    * Điều chỉnh pH: Rải vôi bột (1-2kg/gốc) hoặc tưới Canxi để nâng pH, khử chua.
+    * Kích rễ: Sau rải vôi 7-10 ngày, tưới thuốc kích rễ (Humic Acid + Fulvic Acid). Có thể trộn thêm Trichoderma để đối kháng nấm bệnh.
+
+4. **Bước 4: Bón phân & Kéo đọt**
+    * Khi rễ tơ bắt đầu ra (nhìn thấy đầu rễ trắng), tiến hành bón phân hữu cơ (20-30kg/gốc).
+    * Bón NPK hàm lượng Đạm cao (20-10-10 hoặc 30-10-10) để cây bung đọt mạnh.
+    * Phun trên lá: Combi (Vi lượng) + Amino Acid + Thuốc rầy (bảo vệ cơi đọt non).
+
+### B. "PHÁC ĐỒ ĐIỀU TRỊ" CÂY SUY YẾU - CÂY BỆNH (INTENSIVE CARE)
+Áp dụng cho cây có dấu hiệu: Vàng lá, rụng lá, cành khô, không ra đọt, rễ bị đen/thối.
+
+**NGUYÊN TẮC VÀNG:** "Trị bệnh rễ trước - Dưỡng cây sau". TUYỆT ĐỐI KHÔNG BÓN NPK HÓA HỌC khi cây đang suy (vì rễ đang hỏng, bón phân vào sẽ gây xót rễ, cây chết nhanh hơn).
+
+1. **Giai đoạn 1: Cấp cứu bộ rễ (15 - 20 ngày đầu)**
+    * Cắt tỉa: Cắt bỏ mạnh tay các cành khô, cành bệnh, thậm chí tỉa bớt 30-50% lá vàng để giảm thoát hơi nước (giảm tải cho bộ rễ).
+    * Xử lý thuốc: Tưới thuốc trị nấm (Ridomil Gold/Aliette) + Thuốc trị tuyến trùng (Tervigo/Abamectin) trực tiếp vào vùng rễ. Tưới 2 lần cách nhau 7 ngày.
+    * Giữ ẩm: Tưới nước vừa đủ ẩm, không tưới đẫm gây ngộp rễ.
+
+2. **Giai đoạn 2: Hồi sinh bộ rễ (Sau khi đã diệt nấm)**
+    * Khi kiểm tra thấy rễ không còn thối lan, bắt đầu tưới Kích thích ra rễ (Humic Acid đậm đặc + Thuốc kích rễ như Roots 2/N3M).
+    * Tưới định kỳ 7 ngày/lần cho đến khi thấy rễ trắng xuất hiện.
+
+3. **Giai đoạn 3: "Ăn qua lá" (Nuôi bộ tàn)**
+    * Vì rễ chưa khỏe hẳn, cây không ăn được phân gốc. Phải cung cấp dinh dưỡng qua lá.
+    * Phun: Amino Acid (Đạm cá thủy phân) + Rong biển (Seaweed) + Vi lượng. Dạng này cây hấp thu trực tiếp qua lỗ khí khổng mà không cần rễ. Giúp cây hồi xanh, giữ được bộ lá.
+
+4. **Giai đoạn 4: Bón phân trở lại**
+    * Chỉ khi nào cây ra đọt non mới, lá lụa chuyển xanh, rễ tơ ra nhiều thì mới bắt đầu bón phân hữu cơ và nhấp nhẹ NPK (liều lượng bằng 1/3 cây khỏe).
+
+=============================================================================
+## 14. DANH MỤC HOẠT CHẤT THAY THẾ (TRÁNH KHÁNG THUỐC)
+=============================================================================
+Nấm và sâu rầy kháng thuốc rất nhanh. Cần luân phiên các nhóm hoạt chất sau:
+
+### 1. Nhóm trừ nấm bệnh (Thán thư, thối rễ):
+* **Nhóm 1:** Azoxystrobin, Pyraclostrobin (Amistar, Nativo) - Tác động lưu dẫn mạnh.
+* **Nhóm 2:** Difenoconazole, Propiconazole (Tilt Super, Score).
+* **Nhóm 3:** Metalaxyl, Mancozeb (Ridomil) - Đặc trị Phytophthora.
+* **Nhóm 4:** Fosetyl-Aluminium (Aliette) - Lưu dẫn 2 chiều.
+
+### 2. Nhóm trừ rầy xanh, rệp sáp:
+* **Nhóm 1:** Imidacloprid, Acetamiprid, Thiamethoxam (Lưu dẫn, tác động thần kinh).
+* **Nhóm 2:** Buprofezin (Applaud) - Chống lột xác (diệt ấu trùng).
+* **Nhóm 3:** Fenobucarb, Carbosulfan - Xông hơi, tiếp xúc (diệt con trưởng thành).
+* **Nhóm 4:** Dầu khoáng (SK Enspray) - Gây ngạt thở (an toàn, không kháng thuốc).
+
+### 3. Nhóm trừ Nhện đỏ (Cần luân phiên kỹ nhất):
+* Abamectin / Emamectin Benzoate.
+* Propargite (Comite).
+* Pyridaben / Fenpyroximate.
+* Diafenthiuron.
+
+=============================================================================
+## KỸ THUẬT NHẬN BIẾT TƯỚI NƯỚC "ĐỦ" (KINH NGHIỆM THỰC TẾ)
+=============================================================================
+Nông dân thường thắc mắc tưới bao nhiêu là đủ. Do mỗi vườn đất cát/đất thịt khác nhau nên số lít nước chỉ là tham khảo. Hãy dùng các cách sau để kiểm tra:
+
+1. Kiểm tra độ ẩm đất (Chính xác nhất):
+   - Cách làm: Sau khi tưới khoảng 1-2 tiếng, dùng tay bốc một nắm đất ở tầng rễ (sâu khoảng 5-10cm).
+   - Đất đủ nước: Nắm đất lại dính thành cục, không bị vỡ ra, nhưng nước không rỉ qua kẽ tay (Độ ẩm khoảng 60-70%).
+   - Đất thừa nước: Nước rỉ ra kẽ tay, đất nhão nhoẹt -> Cần giảm lượng tưới.
+   - Đất thiếu nước: Nắm đất bị vỡ vụn, tơi ra -> Cần tưới thêm.
+
+2. Nhìn cỏ trong vườn:
+   - Cỏ xanh tốt, mơn mởn -> Đất đủ ẩm.
+   - Cỏ héo rũ, cháy chóp lá -> Đất thiếu nước trầm trọng.
+   - Cây sầu riêng xào lá (lá rũ xuống) vào buổi trưa và không tươi lại vào chiều mát -> Thiếu nước.
+
+3. Định lượng tham khảo (Cho cây Kinh doanh >5 năm):
+   - Mùa khô: Tưới 150 - 250 lít/cây/lần.
+   - Tần suất: 2-3 ngày tưới 1 lần (đất cát), 4-5 ngày tưới 1 lần (đất thịt giữ nước tốt).
+   - Hệ thống béc tưới: Nếu dùng béc phun mưa cục bộ, thường tưới khoảng 30-45 phút/lần là đủ thấm.
+
+
+=============================================================================
+## BẢNG ĐỊNH LƯỢNG NƯỚC TƯỚI CHI TIẾT (CÔNG THỨC TÍNH)
+=============================================================================
+Lượng nước tưới phụ thuộc vào 3 yếu tố: Loại đất, Đường kính tán cây và Thời tiết.
+
+### 1. Công thức ước lượng theo Đường kính tán (D):
+- Quy ước: 1 mét đường kính tán cần 30 - 40 lít nước/lần tưới (Mùa khô).
+- Ví dụ:
+  + Cây 5 năm tuổi, tán rộng 4 mét -> Cần tưới: 4m x 40 lít = 160 lít/lần.
+  + Cây 7 năm tuổi, tán rộng 6 mét -> Cần tưới: 6m x 40 lít = 240 lít/lần.
+
+### 2. Điều chỉnh theo Loại đất (Yếu tố quan trọng):
+- Đất Cát / Đất sỏi (Thoát nước nhanh, giữ ẩm kém):
+  + Tăng lượng nước lên 20% so với công thức chuẩn.
+  + Tần suất: Tưới hàng ngày hoặc cách 1 ngày/lần.
+- Đất Đỏ Bazan / Đất thịt (Giữ nước tốt):
+  + Giữ nguyên công thức chuẩn.
+  + Tần suất: Cách 2-3 ngày tưới 1 lần.
+- Đất Sét / Đất thấp (Thoát nước kém):
+  + Giảm lượng nước 20%.
+  + Tần suất: Cách 3-4 ngày tưới 1 lần (chờ đất mặt khô mới tưới lại).
+
+### 3. Điều chỉnh theo Giai đoạn:
+- Giai đoạn Mắt Cua (vừa nhú): Chỉ tưới sương nhẹ (20-30% lượng bình thường) để duy trì độ ẩm, tưới mạnh sẽ sốc nước rụng bông.
+- Giai đoạn Xổ Nhụy: Tưới 30-40% lượng bình thường.
+- Giai đoạn Trái Trứng Gà (trái đang lớn nhanh): Tưới ĐỦ 100% công thức (tăng dần lượng nước sau khi đậu trái xong).
+
+=============================================================================
+## BẢNG ĐỊNH LƯỢNG PHÂN BÓN NPK (CÔNG THỨC TÍNH)
+=============================================================================
+### Quy tắc "Nhìn tán bón phân":
+Lượng phân bón gốc phụ thuộc vào đường kính tán lá (nơi rễ tơ hoạt động).
+- Công thức: 1 mét đường kính tán = 300g - 500g phân NPK/lần bón.
+- Ví dụ:
+  + Cây tán 4 mét -> Bón khoảng 1.2kg - 1.5kg NPK/lần.
+  + Cây tán 6 mét -> Bón khoảng 2kg - 2.5kg NPK/lần.
+
+Lưu ý: Chia nhỏ làm nhiều lần bón sẽ tốt hơn bón 1 lần quá nhiều (dễ gây cháy rễ).
