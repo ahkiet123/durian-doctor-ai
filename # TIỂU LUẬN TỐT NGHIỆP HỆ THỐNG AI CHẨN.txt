@@ -98,3 +98,58 @@ My_Graduation_Thesis/
 │
 ├── requirements.txt            # Thêm: pytorch-grad-cam
 └── README.md                   # File tài liệu này
+
+---
+## CẬP NHẬT TIẾN ĐỘ DỰ ÁN (01/12/2025)
+
+Phần này tóm tắt những thay đổi đã thực hiện so với kế hoạch ban đầu, tiến độ hiện tại, cách chạy nhanh và các bước tiếp theo đề xuất.
+
+- **Những thay đổi chính so với kế hoạch ban đầu**
+    - Tiền xử lý ảnh (resize 224x224) đã hoàn tất; bộ ảnh đã xử lý nằm tại `data/processed_train_224/`.
+    - Module `src/dataset.py`, `src/train.py`, `src/evaluate.py` và `src/gradcam_utils.py` đã được thêm vào repository.
+    - Ứng dụng giao diện Streamlit (`src/app.py`) đã được phát triển; gồm upload ảnh, dự đoán, và tab Chatbot.
+    - Knowledge base (tài liệu chuyên môn) đã soạn tại `knowledge_base/durian_diseases.txt`.
+    - Đã xây dựng Chroma vector DB cục bộ sử dụng embeddings từ `sentence-transformers` (`all-MiniLM-L6-v2`) và lưu tại `knowledge_base/chroma_db/`.
+    - RAG integration: ứng dụng Streamlit truy vấn Chroma để lấy top-3 đoạn liên quan và ghép vào prompt trước khi gọi LLM.
+    - Đã thêm `.gitignore` và đẩy (push) toàn bộ project lên repo GitHub: `https://github.com/ahkiet123/durian-doctor-ai.git`.
+
+- **Hiện trạng chi tiết (Completed / Pending)**
+    - Completed:
+        - Preprocessing ảnh: ✅
+        - Dataset loader & basic tests: ✅
+        - Chroma DB build with local embeddings: ✅
+        - Streamlit app scaffold + retrieval logic: ✅
+        - Git push to remote: ✅
+    - Pending / Recommended:
+        - Huấn luyện chính thức model MobileNetV2 (tạo `models/best_mobilenet_v2.pth`) — cần GPU/time.
+        - Tạo `src/rag.py` như module tách rời để quản lý load/query collection (hiện logic đã hoạt động inline trong `src/app.py`).
+        - Migrate Chroma DB nếu muốn loại bỏ cảnh báo deprecated (chạy `pip install chroma-migrate` và `chroma-migrate`).
+        - Thêm hiển thị nguồn tham chiếu (passages + khoảng cách/score) trên giao diện chatbot để tăng minh bạch.
+
+- **Lệnh nhanh để thử nghiệm (PowerShell)**
+    ```powershell
+    cd "C:\Users\ahkie\OneDrive\Desktop\Durian Disease Detection"
+    python -m pip install -r requirements.txt
+
+    # (Tùy chọn) Xây lại Chroma DB từ file knowledge base
+    python src/build_db.py
+
+    # Chạy ứng dụng Streamlit
+    python -m streamlit run src/app.py
+    ```
+
+- **Ghi chú quan trọng**
+    - Embeddings: Đảm bảo dùng cùng model embedding (`all-MiniLM-L6-v2`) khi build DB và encode query.
+    - LLM/Gemini: Nếu muốn trả lời bằng Google Gemini, thêm `GOOGLE_API_KEY` vào `.env` (không commit `.env`).
+    - Chroma: Hiện có cảnh báo về cấu hình cũ; migration là tùy chọn nhưng khuyến nghị nếu gặp lỗi tương thích trong tương lai.
+
+- **Các bước tiếp theo tôi đề xuất (ưu tiên)**
+    1. Chạy huấn luyện model (`python src/train.py`) trên máy có GPU để tạo file checkpoint.
+    2. Tách module RAG vào `src/rag.py` và thay thế logic inline trong `src/app.py`.
+    3. Thêm UI hiển thị passages nguồn ở tab Chatbot.
+
+Nếu bạn muốn, tôi có thể tiếp tục và:
+- Tạo `src/rag.py` rồi cập nhật `src/app.py` để sử dụng module đó.
+- Hoàn thiện README chi tiết hơn bằng tiếng Việt/Anh cho phần luận văn.
+
+---
