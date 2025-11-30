@@ -148,8 +148,4 @@ Phần này tóm tắt những thay đổi đã thực hiện so với kế ho�
     2. Tách module RAG vào `src/rag.py` và thay thế logic inline trong `src/app.py`.
     3. Thêm UI hiển thị passages nguồn ở tab Chatbot.
 
-Nếu bạn muốn, tôi có thể tiếp tục và:
-- Tạo `src/rag.py` rồi cập nhật `src/app.py` để sử dụng module đó.
-- Hoàn thiện README chi tiết hơn bằng tiếng Việt/Anh cho phần luận văn.
-
 ---
