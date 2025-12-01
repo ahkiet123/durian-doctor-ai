@@ -50,7 +50,7 @@ class LocalSentenceEmbeddings:
 
 def build_chroma_db_if_missing(kb_path: str, db_path: str):
     """Build Chroma DB từ file knowledge base nếu chưa tồn tại"""
-    from langchain.text_splitter import RecursiveCharacterTextSplitter
+    from langchain_text_splitters import RecursiveCharacterTextSplitter
     
     # Đọc file knowledge base
     if not os.path.exists(kb_path):
