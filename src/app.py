@@ -86,24 +86,40 @@ def build_chroma_db_if_missing(kb_path: str, db_path: str):
 
 @st.cache_resource
 def load_vector_db():
-    """Load Vector Database từ ổ cứng, tự động build nếu chưa có"""
+    """Load Vector Database, tự động build nếu chưa có (hỗ trợ Streamlit Cloud)"""
     try:
         embedding_function = LocalSentenceEmbeddings()
         base_dir = os.path.dirname(__file__)
-        db_path = os.path.join(base_dir, '..', 'knowledge_base', 'chroma_db')
         kb_path = os.path.join(base_dir, '..', 'knowledge_base', 'durian_diseases.txt')
         
-        # Nếu DB chưa tồn tại → tự động build từ file txt
-        if not os.path.exists(db_path) or not os.listdir(db_path):
-            print("🔄 Chroma DB chưa tồn tại, đang tự động tạo...")
-            db = build_chroma_db_if_missing(kb_path, db_path)
+        # Thử local path trước, nếu không ghi được thì dùng /tmp (Streamlit Cloud)
+        local_db_path = os.path.join(base_dir, '..', 'knowledge_base', 'chroma_db')
+        
+        # Kiểm tra nếu local DB đã tồn tại và có dữ liệu
+        if os.path.exists(local_db_path) and os.listdir(local_db_path):
+            print("📂 Loading existing local Chroma DB...")
+            db = Chroma(persist_directory=local_db_path, embedding_function=embedding_function)
             return db
         
-        # Load DB đã có sẵn
-        db = Chroma(persist_directory=db_path, embedding_function=embedding_function)
+        # Trên Streamlit Cloud: dùng /tmp (writable)
+        import tempfile
+        cloud_db_path = os.path.join(tempfile.gettempdir(), 'chroma_durian_db')
+        
+        # Nếu đã build trong /tmp rồi thì load
+        if os.path.exists(cloud_db_path) and os.listdir(cloud_db_path):
+            print("📂 Loading existing Chroma DB from /tmp...")
+            db = Chroma(persist_directory=cloud_db_path, embedding_function=embedding_function)
+            return db
+        
+        # Chưa có DB → build mới vào /tmp
+        print("🔄 Chroma DB chưa tồn tại, đang tự động tạo trong /tmp...")
+        db = build_chroma_db_if_missing(kb_path, cloud_db_path)
         return db
+        
     except Exception as e:
         print(f"Lỗi load DB: {e}")
+        import traceback
+        traceback.print_exc()
         return None
 
 # --- 3. CẤU HÌNH CLASS BỆNH (11 Lớp) ---
