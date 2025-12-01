@@ -149,3 +149,12 @@ Phần này tóm tắt những thay đổi đã thực hiện so với kế ho�
     3. Thêm UI hiển thị passages nguồn ở tab Chatbot.
 
 ---
+
+python -m streamlit run src\app.py
+
+$env:Path += ";E:\ngrok-v3-stable-windows-amd64"
+
+ngrok http 8501
+
+
+hỏi về giá cả hiện tại -> phải biết
