@@ -48,18 +48,58 @@ class LocalSentenceEmbeddings:
         emb = self.model.encode([text], show_progress_bar=False)[0]
         return emb.tolist() if hasattr(emb, 'tolist') else list(emb)
 
+def build_chroma_db_if_missing(kb_path: str, db_path: str):
+    """Build Chroma DB từ file knowledge base nếu chưa tồn tại"""
+    from langchain.text_splitter import RecursiveCharacterTextSplitter
+    
+    # Đọc file knowledge base
+    if not os.path.exists(kb_path):
+        print(f"⚠️ Không tìm thấy file knowledge base: {kb_path}")
+        return None
+    
+    with open(kb_path, 'r', encoding='utf-8') as f:
+        content = f.read()
+    
+    # Chia nhỏ văn bản
+    text_splitter = RecursiveCharacterTextSplitter(
+        chunk_size=800,
+        chunk_overlap=100,
+        separators=["\n\n", "\n", ". ", " "]
+    )
+    chunks = text_splitter.split_text(content)
+    
+    if not chunks:
+        print("⚠️ Không có nội dung để tạo DB")
+        return None
+    
+    print(f"📚 Đang tạo Chroma DB với {len(chunks)} đoạn văn bản...")
+    
+    # Tạo DB mới
+    embedding_function = LocalSentenceEmbeddings()
+    db = Chroma.from_texts(
+        texts=chunks,
+        embedding=embedding_function,
+        persist_directory=db_path
+    )
+    print(f"✅ Đã tạo Chroma DB tại: {db_path}")
+    return db
+
 @st.cache_resource
 def load_vector_db():
-    """Load Vector Database từ ổ cứng bằng LangChain"""
+    """Load Vector Database từ ổ cứng, tự động build nếu chưa có"""
     try:
         embedding_function = LocalSentenceEmbeddings()
-        # Đường dẫn trỏ vào thư mục chroma_db
-        db_path = os.path.join(os.path.dirname(__file__), '..', 'knowledge_base', 'chroma_db')
+        base_dir = os.path.dirname(__file__)
+        db_path = os.path.join(base_dir, '..', 'knowledge_base', 'chroma_db')
+        kb_path = os.path.join(base_dir, '..', 'knowledge_base', 'durian_diseases.txt')
         
-        if not os.path.exists(db_path):
-            return None
-            
-        # Load bằng LangChain interface
+        # Nếu DB chưa tồn tại → tự động build từ file txt
+        if not os.path.exists(db_path) or not os.listdir(db_path):
+            print("🔄 Chroma DB chưa tồn tại, đang tự động tạo...")
+            db = build_chroma_db_if_missing(kb_path, db_path)
+            return db
+        
+        # Load DB đã có sẵn
         db = Chroma(persist_directory=db_path, embedding_function=embedding_function)
         return db
     except Exception as e:
