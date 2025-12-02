@@ -2,6 +2,8 @@
 
 truy cập bản demo (chưa có model nhận diện qua ảnh chỉ có thể thử qua bot chat AI chuyên viên sầu riêng. ) qua đường link:
 durian-doctor-ai.streamlit.app
+
+
 Durian Doctor AI là một hệ thống bằng Python để phát hiện và hỗ trợ chẩn đoán các bệnh thường gặp trên cây sầu riêng (lá, thân, trái). Dự án tích hợp pipeline xử lý ảnh, mô-đun huấn luyện/đánh giá mô hình PyTorch, chức năng giải thích kết quả (Grad-CAM), và ứng dụng giao diện người dùng bằng Streamlit cùng một knowledge base để hỗ trợ mô-đun RAG (retrieval-augmented generation).
 
 Phiên bản README này được soạn dựa trên cấu trúc và nội dung hiện tại của repository (các file trong src/, notebooks/, knowledge_base/, requirements.txt, v.v.).
