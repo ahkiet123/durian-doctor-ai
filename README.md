@@ -5,28 +5,28 @@
 ![PyTorch](https://img.shields.io/badge/PyTorch-EE4C2C?style=for-the-badge&logo=pytorch&logoColor=white)
 ![Gemini](https://img.shields.io/badge/Gemini-8E75B2?style=for-the-badge&logo=googlebard&logoColor=white)
 
-> **Tiểu luận tốt nghiệp - Hệ thống AI chẩn đoán và tư vấn bệnh sầu riêng**  
-> **Tác giả:** Đặng Anh Kiệt
+> **Tiểu luận tốt nghiệp - Hệ thống AI chẩn đoán và tư vấn bệnh trên cây sầu riêng**  
+> **Dev:** Đặng Anh Kiệt
 
 ---
 
-## 🚀 Demo Trực Tuyến
+## 🚀 Demo Production Trực Tuyến
 
 Trải nghiệm ngay ứng dụng tại đây:  
 👉 **[Durian Doctor AI - Live App](https://durian-doctor-ai.streamlit.app/)**
 
-*(Lưu ý: Tính năng chẩn đoán hình ảnh đang sử dụng mô hình demo, Chatbot hoạt động đầy đủ với dữ liệu chuyên sâu)*
+*(Lưu ý: Tính năng chẩn đoán hình ảnh đang được phát triển, hiện tại chưa thể dùng được. Chatbot đã hoạt động đầy đủ với dữ liệu chuyên sâu)*
 
 ---
 
 ## 📖 Giới thiệu
 
-**Durian Doctor AI** là giải pháp công nghệ hỗ trợ nông dân và chuyên gia trong việc chăm sóc cây sầu riêng. Hệ thống kết hợp **Thị giác máy tính (Computer Vision)** để chẩn đoán bệnh qua ảnh và **AI tạo sinh (Generative AI)** để tư vấn cách điều trị.
+**Durian Doctor AI** là giải pháp công nghệ hỗ trợ nông dân và chuyên gia trong việc chăm sóc cây sầu riêng. Hệ thống kết hợp **Thị giác máy tính (Computer Vision)** để chẩn đoán bệnh qua ảnh và **AI tạo dựng (Generative AI)** để tư vấn cách điều trị.
 
 ### ✨ Tính năng nổi bật
 
 *   📸 **Chẩn đoán bệnh:** Phân loại bệnh trên lá, thân, trái sầu riêng (MobileNetV2).
-*   🔍 **Giải thích AI:** Hiển thị vùng bệnh trên ảnh bằng kỹ thuật Grad-CAM.
+*   🔍 **XAI:** Hiển thị vùng bệnh trên ảnh bằng kỹ thuật Grad-CAM.
 *   💬 **Chatbot Chuyên gia:** Trả lời câu hỏi, tư vấn thuốc và phác đồ điều trị dựa trên tài liệu chuẩn (RAG + Gemini).
 *   📚 **Minh bạch:** Trích dẫn nguồn tài liệu tham khảo cho từng câu trả lời.
 
@@ -65,4 +65,4 @@ Trải nghiệm ngay ứng dụng tại đây:
 *   **Liên hệ:** [GitHub Profile](https://github.com/ahkiet123)
 
 ---
-*Made with ❤️ for Vietnam Agriculture*
+
