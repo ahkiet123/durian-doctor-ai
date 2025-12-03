@@ -35,19 +35,19 @@ def main():
     st.markdown("**Hệ thống AI chẩn đoán bệnh sầu riêng & Tư vấn điều trị**")
     st.markdown("---")
     
-    # Load tài nguyên
+    # Load tài nguyên (không hiển thị warning ở đây)
     model, model_loaded = load_model()
     vector_db = load_vector_db()
-    
-    if not model_loaded:
-        st.warning("⚠️ Chưa tìm thấy file model. Vui lòng train xong model.")
-    if vector_db is None:
-        st.warning("⚠️ Chưa tìm thấy Database. Chatbot sẽ không dùng RAG.")
 
     tab1, tab2 = st.tabs(["📷 Chẩn đoán bệnh", "💬 Hỏi đáp AI"])
     
     # === TAB 1: CHẨN ĐOÁN ===
     with tab1:
+        # Hiển thị thông báo model trong tab này thôi
+        if not model_loaded:
+            st.info("ℹ️ **Chức năng chẩn đoán ảnh chưa sẵn sàng**  \nModel AI đang được huấn luyện. Vui lòng sử dụng tab **Hỏi đáp AI** để tư vấn.")
+            st.markdown("---")
+        
         st.subheader("📷 Tải ảnh lên để chẩn đoán")
         option = st.radio("Nguồn ảnh:", ("📁 Tải ảnh", "📸 Chụp ảnh"), horizontal=True)
         
@@ -85,10 +85,10 @@ def main():
     with tab2:
         st.subheader("💬 Hỏi đáp với Chuyên gia AI")
         
-        if not GOOGLE_API_KEY:
-            st.warning("⚠️ Chưa cấu hình API Key.")
+        # Toggle hiển thị quá trình suy nghĩ
+        show_thinking = st.toggle("🧠 Hiển thị quá trình suy nghĩ", value=False, help="Xem AI đang làm gì")
         
-        # Hiển thị kết quả chẩn đoán gần nhất
+        # Hiển thị kết quả chẩn đoán gần nhất (nếu có)
         if 'diagnosis_vi' in st.session_state:
             st.info(f"📋 Kết quả chẩn đoán gần nhất: **{st.session_state['diagnosis_vi']}**")
         
@@ -96,48 +96,74 @@ def main():
         if "messages" not in st.session_state:
             st.session_state.messages = []
         
+        # Hiển thị messages
         for message in st.session_state.messages:
             with st.chat_message(message["role"]):
                 st.markdown(message["content"])
         
         # Input
         if prompt := st.chat_input("Hỏi về bệnh sầu riêng, cách điều trị..."):
+            # Hiển thị message user
             st.session_state.messages.append({"role": "user", "content": prompt})
-            with st.chat_message("user"): st.markdown(prompt)
+            with st.chat_message("user"):
+                st.markdown(prompt)
             
+            # Xử lý và hiển thị response
             with st.chat_message("assistant"):
-                message_placeholder = st.empty()
-                
                 if not GOOGLE_API_KEY:
-                    bot_reply = "⚠️ Thiếu API Key."
+                    st.warning("⚠️ Vui lòng cấu hình API Key trong phần Settings.")
                 else:
-                    # 1. RAG: Tìm kiếm trong Vector DB
+                    # Container cho thinking process
+                    thinking_container = st.empty()
+                    
+                    # === STEP 1: Tìm kiếm RAG ===
+                    if show_thinking:
+                        with thinking_container.container():
+                            st.markdown("🔍 **Đang tìm kiếm trong cơ sở tri thức...**")
+                            with st.status("Truy vấn RAG Database", expanded=True) as status:
+                                st.write("📚 Kết nối ChromaDB...")
+                    
                     retrieved_block = ""
+                    retrieved_docs_display = []
                     try:
                         if vector_db:
                             docs = vector_db.similarity_search(prompt, k=3)
                             if docs:
+                                for i, d in enumerate(docs):
+                                    retrieved_docs_display.append(f"**[{i+1}]** {d.page_content[:150]}...")
                                 content_list = [f"[{i+1}] {d.page_content}" for i, d in enumerate(docs)]
                                 retrieved_block = "THÔNG TIN THAM KHẢO TỪ TÀI LIỆU (RAG):\n" + "\n\n".join(content_list)
-                            else:
-                                retrieved_block = "Không tìm thấy thông tin liên quan trong tài liệu."
                     except Exception as e:
                         print(f"RAG Error: {e}")
                     
-                    # 2. Context Chẩn đoán
+                    if show_thinking:
+                        with thinking_container.container():
+                            with st.status("Truy vấn RAG Database", expanded=True, state="complete") as status:
+                                if retrieved_docs_display:
+                                    st.write("✅ Tìm thấy tài liệu liên quan:")
+                                    for doc in retrieved_docs_display:
+                                        st.caption(doc)
+                                else:
+                                    st.write("ℹ️ Không tìm thấy tài liệu cụ thể")
+                    
+                    # === STEP 2: Chuẩn bị context ===
+                    if show_thinking:
+                        with thinking_container.container():
+                            with st.status("Truy vấn RAG Database", expanded=False, state="complete"):
+                                st.write("✅ Hoàn tất")
+                            with st.status("Xây dựng ngữ cảnh", expanded=True) as status:
+                                st.write("📝 Phân tích lịch sử hội thoại...")
+                    
                     diag_context = ""
                     if 'diagnosis_vi' in st.session_state:
                         diag_context = f"LƯU Ý NGỮ CẢNH: Người dùng vừa upload ảnh và được AI chẩn đoán cây bị bệnh: {st.session_state['diagnosis_vi']}."
 
-                    # 3. Chat History Context (Tạo trí nhớ ngắn hạn)
                     chat_history_text = ""
-                    # Lấy 6 tin nhắn gần nhất để làm ngữ cảnh (User - Bot - User - Bot...)
                     recent_msgs = st.session_state.messages[-6:]
                     for msg in recent_msgs:
                         role_label = "Người dùng" if msg["role"] == "user" else "Durian Doctor"
                         chat_history_text += f"{role_label}: {msg['content']}\n"
 
-                    # 4. System Prompt (Cập nhật quy tắc nhớ & hỏi ngược)
                     system_prompt = """
 Bạn là "Durian Doctor" - chuyên gia nông nghiệp hàng đầu về cây sầu riêng tại Việt Nam.
 
@@ -150,9 +176,8 @@ CẤU TRÚC TRẢ LỜI:
 - Chào hỏi ngắn gọn.
 - Nếu thiếu thông tin -> Hỏi lại.
 - Nếu đủ thông tin -> Đưa ra phác đồ chi tiết (Phân bón, Thuốc, Cách làm) dựa trên "THÔNG TIN THAM KHẢO".
-                    """
+"""
                     
-                    # 5. Build Full Prompt
                     full_prompt = f"""
 {system_prompt}
 
@@ -167,18 +192,41 @@ NGƯỜI DÙNG HỎI (CÂU MỚI NHẤT):
 {prompt}
 """
                     
-                    # 6. Call Gemini
+                    # === STEP 3: Gọi Gemini ===
+                    if show_thinking:
+                        with thinking_container.container():
+                            with st.status("Truy vấn RAG Database", expanded=False, state="complete"):
+                                st.write("✅ Hoàn tất")
+                            with st.status("Xây dựng ngữ cảnh", expanded=False, state="complete"):
+                                st.write("✅ Hoàn tất")
+                            with st.status("🤖 Gemini đang suy nghĩ...", expanded=True) as status:
+                                st.write("💭 Phân tích câu hỏi và tài liệu...")
+                    
                     try:
                         model_gemini = genai.GenerativeModel('gemini-2.0-flash')
                         response = model_gemini.generate_content(full_prompt)
                         bot_reply = response.text
                     except Exception as e:
                         bot_reply = f"⚠️ Lỗi kết nối Google Gemini: {e}"
-                
-                message_placeholder.markdown(bot_reply)
-                st.session_state.messages.append({"role": "assistant", "content": bot_reply})
+                    
+                    # === Hoàn tất - Hiển thị kết quả ===
+                    if show_thinking:
+                        with thinking_container.container():
+                            with st.status("Truy vấn RAG Database", expanded=False, state="complete"):
+                                st.write("✅ Hoàn tất")
+                            with st.status("Xây dựng ngữ cảnh", expanded=False, state="complete"):
+                                st.write("✅ Hoàn tất")
+                            with st.status("🤖 Gemini đang suy nghĩ...", expanded=False, state="complete"):
+                                st.write("✅ Đã tạo câu trả lời")
+                            st.markdown("---")
+                    else:
+                        thinking_container.empty()
+                    
+                    # Hiển thị response
+                    st.markdown(bot_reply)
+                    st.session_state.messages.append({"role": "assistant", "content": bot_reply})
+
     # Footer
-    st.markdown("---")
     st.markdown(
     """
     <hr style="margin-top: 40px; border: 0; border-top: 1px solid #e0e0e0;">
@@ -198,6 +246,7 @@ NGƯỜI DÙNG HỎI (CÂU MỚI NHẤT):
     </div>
     """,
     unsafe_allow_html=True
-)
+    )
+
 if __name__ == "__main__":
     main()
