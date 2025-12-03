@@ -10,8 +10,8 @@ import os
 from dotenv import load_dotenv
 
 # --- IMPORT MODULES ---
-from src.rag_engine import load_vector_db
-from src.model_utils import load_model, predict_and_gradcam, CLASS_NAMES_VI
+from rag_engine import load_vector_db
+from model_utils import load_model, predict_and_gradcam, CLASS_NAMES_VI
 
 # Load biến môi trường từ file .env
 load_dotenv()
