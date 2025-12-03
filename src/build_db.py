@@ -1,82 +1,36 @@
-# src/build_db.py
+"""
+Build Chroma Vector Database từ Knowledge Base
+Chạy một lần để tạo DB, sau đó app sẽ tự load.
+"""
 import os
-from dotenv import load_dotenv
+from rag_engine import build_chroma_db_if_missing
 
-# Prefer stable imports across LangChain versions
-try:
-    from langchain.document_loaders import TextLoader
-except Exception:
-    # fallback to community loader if present
-    from langchain_community.document_loaders import TextLoader
+# Đường dẫn
+BASE_DIR = os.path.dirname(__file__)
+KB_PATH = os.path.join(BASE_DIR, '..', 'knowledge_base', 'durian_diseases.txt')
+DB_PATH = os.path.join(BASE_DIR, '..', 'knowledge_base', 'chroma_db')
 
-try:
-    # langchain v1.x uses plural 'text_splitters'
-    from langchain.text_splitters import RecursiveCharacterTextSplitter
-except Exception:
-    # older versions / variations or separate package
-    try:
-        from langchain.text_splitter import RecursiveCharacterTextSplitter
-    except Exception:
-        from langchain_text_splitters import RecursiveCharacterTextSplitter
-
-from langchain_community.vectorstores import Chroma
-from sentence_transformers import SentenceTransformer
-
-# Use local sentence-transformers embeddings to avoid external API/key issues
-class LocalSentenceEmbeddings:
-    def __init__(self, model_name: str = 'all-MiniLM-L6-v2'):
-        self.model = SentenceTransformer(model_name)
-
-    def embed_documents(self, texts):
-        # returns list[list[float]]
-        embs = self.model.encode(texts, show_progress_bar=False)
-        # SentenceTransformer returns numpy array
-        return [emb.tolist() if hasattr(emb, 'tolist') else list(emb) for emb in embs]
-
-    def embed_query(self, text):
-        emb = self.model.encode([text], show_progress_bar=False)[0]
-        return emb.tolist() if hasattr(emb, 'tolist') else list(emb)
-
-# Load .env (do NOT hardcode API keys in source)
-load_dotenv()
-GOOGLE_API_KEY = os.getenv("GOOGLE_API_KEY")
-if not GOOGLE_API_KEY:
-    print("⚠️ WARNING: GOOGLE_API_KEY not found in environment. Set it in .env or env vars before running.")
-
-# Đường dẫn (use existing file)
-DATA_PATH = "knowledge_base/durian_diseases.txt"
-DB_PATH = "knowledge_base/chroma_db"
-
-def create_vector_db():
-    print("⏳ Đang tải dữ liệu...")
-    # 2. Load dữ liệu từ file text
-    loader = TextLoader(DATA_PATH, encoding='utf-8')
-    documents = loader.load()
-
-    # 3. Cắt nhỏ văn bản (Chunking)
-    # Chunk size 1000 ký tự, overlap 200 để giữ ngữ cảnh giữa các đoạn
-    text_splitter = RecursiveCharacterTextSplitter(chunk_size=1000, chunk_overlap=200)
-    chunks = text_splitter.split_documents(documents)
-    print(f"✅ Đã chia thành {len(chunks)} đoạn nhỏ.")
-
-    # 4. Tạo Vector DB
-    print("⏳ Đang tạo Embeddings (sentence-transformers) và lưu vào ChromaDB...")
-    embeddings = LocalSentenceEmbeddings()
-
-    # Tạo và lưu xuống ổ cứng
-    db = Chroma.from_documents(
-        documents=chunks,
-        embedding=embeddings,
-        persist_directory=DB_PATH,
-    )
-
-    # đảm bảo persist nếu client yêu cầu
-    try:
-        db.persist()
-    except Exception:
-        pass
-
-    print("🎉 Thành công! Database đã được lưu tại:", DB_PATH)
+def main():
+    print("=" * 50)
+    print("🌳 Durian Doctor - Build Vector Database")
+    print("=" * 50)
+    
+    if os.path.exists(DB_PATH) and os.listdir(DB_PATH):
+        print(f"⚠️ Database đã tồn tại tại: {DB_PATH}")
+        response = input("Bạn có muốn xóa và tạo lại? (y/n): ")
+        if response.lower() != 'y':
+            print("❌ Đã hủy.")
+            return
+        import shutil
+        shutil.rmtree(DB_PATH)
+        print("🗑️ Đã xóa database cũ.")
+    
+    db = build_chroma_db_if_missing(KB_PATH, DB_PATH)
+    
+    if db:
+        print("✅ Hoàn tất!")
+    else:
+        print("❌ Có lỗi xảy ra.")
 
 if __name__ == "__main__":
-    create_vector_db()
+    main()

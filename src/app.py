@@ -96,25 +96,34 @@ def main():
         if "messages" not in st.session_state:
             st.session_state.messages = []
         
-        # Hiển thị messages
-        for message in st.session_state.messages:
-            with st.chat_message(message["role"]):
-                st.markdown(message["content"])
+        # Container cho messages với chiều cao cố định để input luôn ở dưới
+        chat_container = st.container(height=450)
         
-        # Input
-        if prompt := st.chat_input("Hỏi về bệnh sầu riêng, cách điều trị..."):
-            # Hiển thị message user
+        # Hiển thị messages trong container
+        with chat_container:
+            for message in st.session_state.messages:
+                with st.chat_message(message["role"]):
+                    st.markdown(message["content"])
+        
+        # Input luôn ở dưới cùng
+        prompt = st.chat_input("Hỏi về bệnh sầu riêng, cách điều trị...")
+        
+        if prompt:
+            # Thêm message user vào history
             st.session_state.messages.append({"role": "user", "content": prompt})
-            with st.chat_message("user"):
-                st.markdown(prompt)
             
-            # Xử lý và hiển thị response
-            with st.chat_message("assistant"):
-                if not GOOGLE_API_KEY:
-                    st.warning("⚠️ Vui lòng cấu hình API Key trong phần Settings.")
-                else:
-                    # Container cho thinking process
-                    thinking_container = st.empty()
+            # Hiển thị trong container
+            with chat_container:
+                with st.chat_message("user"):
+                    st.markdown(prompt)
+            
+                # Xử lý và hiển thị response
+                with st.chat_message("assistant"):
+                    if not GOOGLE_API_KEY:
+                        st.warning("⚠️ Vui lòng cấu hình API Key trong phần Settings.")
+                    else:
+                        # Container cho thinking process
+                        thinking_container = st.empty()
                     
                     # === STEP 1: Tìm kiếm RAG ===
                     if show_thinking:
@@ -224,6 +233,16 @@ NGƯỜI DÙNG HỎI (CÂU MỚI NHẤT):
                     
                     # Hiển thị response
                     st.markdown(bot_reply)
+                    
+                    # Hiển thị trích dẫn nguồn tài liệu (nếu có)
+                    if retrieved_docs_display:
+                        with st.expander("📚 Nguồn tài liệu tham khảo", expanded=False):
+                            for i, doc in enumerate(retrieved_docs_display):
+                                st.markdown(doc)
+                                if i < len(retrieved_docs_display) - 1:
+                                    st.divider()
+                    
+                    # Lưu message
                     st.session_state.messages.append({"role": "assistant", "content": bot_reply})
 
     # Footer
