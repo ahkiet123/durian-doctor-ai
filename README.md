@@ -10,59 +10,68 @@
 
 ---
 
-## 🚀 Demo Production Trực Tuyến
+## 🚀 Demo Trực Tuyến
 
-Trải nghiệm ngay ứng dụng tại đây:  
 👉 **[Durian Doctor AI - Live App](https://durian-doctor-ai.streamlit.app/)**
 
-*(Lưu ý: Tính năng chẩn đoán hình ảnh đang được phát triển, hiện tại chưa thể dùng được. Chatbot đã hoạt động đầy đủ với dữ liệu chuyên sâu)*
+---
+
+## ✨ Tính năng
+
+| Tính năng | Mô tả |
+|-----------|-------|
+| 📸 **Chẩn đoán bệnh** | Phân loại 11 loại bệnh từ ảnh (MobileNetV2 + Grad-CAM) |
+| 💬 **Chatbot RAG** | Tư vấn bằng AI với dữ liệu chuyên sâu (Gemini + ChromaDB) |
+| 📷 **Hướng dẫn chụp ảnh** | Carousel hướng dẫn chụp ảnh đúng cách |
+| 🧠 **Quá trình suy nghĩ** | Hiển thị chi tiết AI đang xử lý gì |
 
 ---
 
-## 📖 Giới thiệu
+## 📁 Cấu trúc Project
 
-**Durian Doctor AI** là giải pháp công nghệ hỗ trợ nông dân và chuyên gia trong việc chăm sóc cây sầu riêng. Hệ thống kết hợp **Thị giác máy tính (Computer Vision)** để chẩn đoán bệnh qua ảnh và **AI tạo dựng (Generative AI)** để tư vấn cách điều trị.
-
-### ✨ Tính năng nổi bật
-
-*   📸 **Chẩn đoán bệnh:** Phân loại bệnh trên lá, thân, trái sầu riêng (MobileNetV2).
-*   🔍 **XAI:** Hiển thị vùng bệnh trên ảnh bằng kỹ thuật Grad-CAM.
-*   💬 **Chatbot Chuyên gia:** Trả lời câu hỏi, tư vấn thuốc và phác đồ điều trị dựa trên tài liệu chuẩn (RAG + Gemini).
-*   📚 **Minh bạch:** Trích dẫn nguồn tài liệu tham khảo cho từng câu trả lời.
+```
+├── src/
+│   ├── app.py                 # Entry point
+│   ├── config.py              # Cấu hình chung
+│   ├── pages/                 # Multi-page Streamlit
+│   │   ├── 1_📷_Chẩn_Đoán.py
+│   │   ├── 2_💬_Hỏi_Đáp.py
+│   │   ├── 3_📊_Lịch_Sử.py
+│   │   └── 4_🖼️_Thư_Viện.py
+│   ├── model/                 # AI Model
+│   │   ├── classifier.py      # Load & predict
+│   │   └── gradcam.py         # Explainable AI
+│   ├── components/            # UI Components
+│   ├── styles/                # CSS
+│   └── prompts/               # LLM Prompts
+├── models/                    # Trained weights
+├── knowledge_base/            # RAG documents
+└── tests/                     # Unit tests
+```
 
 ---
 
-## 🛠️ Cài đặt & Chạy Local
+## 🛠️ Cài đặt
 
-1.  **Clone dự án:**
-    ```bash
-    git clone https://github.com/ahkiet123/durian-doctor-ai.git
-    cd durian-doctor-ai
-    ```
+```bash
+# Clone
+git clone https://github.com/ahkiet123/durian-doctor-ai.git
+cd durian-doctor-ai
 
-2.  **Cài đặt thư viện:**
-    ```bash
-    pip install -r requirements.txt
-    ```
+# Install
+pip install -r requirements.txt
 
-3.  **Cấu hình:**
-    *   Tạo file `.env` và thêm API Key của Gemini:
-        ```env
-        GOOGLE_API_KEY=your_api_key_here
-        ```
+# Config (.env)
+GOOGLE_API_KEY=your_api_key_here
 
-4.  **Chạy ứng dụng:**
-    ```bash
-    streamlit run src/app.py
-    ```
+# Run
+streamlit run src/app.py
+```
 
 ---
 
 ## 👨‍💻 Tác giả
 
-*   **Họ tên:** Đặng Anh Kiệt
-*   **Dự án:** Tiểu luận tốt nghiệp
-*   **Liên hệ:** [GitHub Profile](https://github.com/ahkiet123)
+**Đặng Anh Kiệt** | [GitHub](https://github.com/ahkiet123)
 
----
-
+© 2025 - Tiểu luận tốt nghiệp
