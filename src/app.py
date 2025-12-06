@@ -24,6 +24,42 @@ st.set_page_config(
     initial_sidebar_state="collapsed"
 )
 
+# --- VIỆT HÓA FILE UPLOADER ---
+st.markdown("""
+<style>
+    /* Thay thế text "Drag and drop file here" */
+    [data-testid="stFileUploaderDropzone"] div div::before {
+        content: "Kéo thả ảnh vào đây";
+    }
+    [data-testid="stFileUploaderDropzone"] div div span {
+        visibility: hidden;
+    }
+    [data-testid="stFileUploaderDropzone"] div div span::before {
+        content: "Kéo thả ảnh vào đây";
+        visibility: visible;
+    }
+    
+    /* Thay thế text "Browse files" thành "Chọn tệp" */
+    [data-testid="stFileUploaderDropzone"] button {
+        visibility: hidden;
+    }
+    [data-testid="stFileUploaderDropzone"] button::after {
+        content: "Chọn tệp";
+        visibility: visible;
+        position: absolute;
+    }
+    
+    /* Thay thế "Limit 200MB per file" */
+    [data-testid="stFileUploaderDropzone"] small {
+        visibility: hidden;
+    }
+    [data-testid="stFileUploaderDropzone"] small::before {
+        content: "Giới hạn: JPG, PNG, JPEG";
+        visibility: visible;
+    }
+</style>
+""", unsafe_allow_html=True)
+
 # --- SETUP GEMINI API ---
 GOOGLE_API_KEY = os.getenv("GOOGLE_API_KEY", "")
 if GOOGLE_API_KEY:
@@ -49,6 +85,28 @@ def main():
             st.markdown("---")
         
         st.subheader("📷 Tải ảnh lên để chẩn đoán")
+        
+        # Hướng dẫn chụp ảnh đúng cách
+        with st.expander("📌 Hướng dẫn chụp ảnh để AI phân tích chính xác", expanded=False):
+            st.markdown("""
+            **🎯 Để có kết quả chẩn đoán tốt nhất, hãy tuân thủ các nguyên tắc sau:**
+            
+            ✅ **NÊN:**
+            - Chụp **cận cảnh** vùng bị bệnh (lá, thân, trái) - khoảng cách 20-50cm
+            - Chụp trong điều kiện **đủ sáng** (ngoài trời, tránh bóng râm)
+            - Giữ **camera ổn định**, ảnh rõ nét không bị mờ
+            - Chụp **thẳng góc** với bề mặt cần chẩn đoán
+            - Để vùng bệnh **chiếm phần lớn** khung hình (>50%)
+            
+            ❌ **TRÁNH:**
+            - Chụp quá xa (toàn cảnh cả cây)
+            - Chụp ngược sáng hoặc trong bóng tối
+            - Ảnh bị mờ, rung, nhòe
+            - Nhiều đối tượng trong cùng một ảnh
+            
+            💡 **Mẹo:** Nếu muốn hỏi về nhiều vùng bệnh khác nhau, hãy chụp riêng từng vùng và chẩn đoán lần lượt!
+            """)
+        
         option = st.radio("Nguồn ảnh:", ("📁 Tải ảnh", "📸 Chụp ảnh"), horizontal=True)
         
         image = None
@@ -179,12 +237,18 @@ Bạn là "Durian Doctor" - chuyên gia nông nghiệp hàng đầu về cây s�
 QUY TẮC CỐT LÕI (BẮT BUỘC):
 1. **KIỂM TRA LỊCH SỬ CHAT (Context Awareness):** Trước khi hỏi lại người dùng, HÃY ĐỌC KỸ phần "LỊCH SỬ TRÒ CHUYỆN" bên dưới. Nếu người dùng đã cung cấp thông tin (như tuổi cây, giống, giai đoạn) ở các câu trước, **TUYỆT ĐỐI KHÔNG HỎI LẠI**. Hãy tự xâu chuỗi thông tin để trả lời.
 2. **Tư vấn có tâm:** Nếu người dùng hỏi chung chung (VD: "Bón phân gì?"), hãy hỏi thêm 2-3 thông tin quan trọng nhất (Tuổi cây, Giai đoạn sinh trưởng, Tình trạng đất) để tư vấn chính xác.
-3. **An toàn:** Chỉ đưa ra tên thuốc/liều lượng nếu có trong tài liệu. Không bịa số. Chỉ trả lời về sầu riêng.
-
-CẤU TRÚC TRẢ LỜI:
+3. **An toàn tuyệt đối:** Chỉ đưa ra tên thuốc/liều lượng nếu có trong tài liệu. Không bịa số. Nếu tài liệu không ghi liều lượng, hãy nói "Mời bác xem kỹ hướng dẫn trên bao bì".
+4. **Thân thiện & Tự nhiên:** Chào hỏi ngắn gọn, xưng hô là "tôi" và gọi người dùng là "bác" hoặc "nhà vườn".
+5. **Về Giá cả thị trường:** KHÔNG đưa ra con số cụ thể (vì giá biến động). Chỉ giải thích các yếu tố ảnh hưởng giá (đẹp/xấu) và khuyên tham khảo thương lái địa phương.
+6. **Phạm vi:** Chỉ trả lời về Sầu Riêng. Từ chối lịch sự các chủ đề khác (như chính trị, xổ số, code...).
+7. **Xử lý khi thiếu thông tin:** Nếu tài liệu tham khảo không có câu trả lời, hãy thành thật nói: "Hiện tại trong cơ sở dữ liệu của tôi chưa cập nhật vấn đề này, bác vui lòng tham khảo thêm ý sư địa phương".
+CẤU TRÚC TRẢ LỜI (ĐỊNH DẠNG MARKDOWN):
 - Chào hỏi ngắn gọn.
 - Nếu thiếu thông tin -> Hỏi lại.
 - Nếu đủ thông tin -> Đưa ra phác đồ chi tiết (Phân bón, Thuốc, Cách làm) dựa trên "THÔNG TIN THAM KHẢO".
+- Sử dụng **in đậm** cho tên thuốc, hoạt chất và các ý chính quan trọng.
+- Sử dụng gạch đầu dòng (-) cho các bước thực hiện để dễ đọc.
+- Kết thúc bằng một lời chúc hoặc lời khuyên an toàn.
 """
                     
                     full_prompt = f"""

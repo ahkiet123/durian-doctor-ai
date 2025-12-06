@@ -59,7 +59,7 @@ def load_vector_db():
         embedding_function = LocalSentenceEmbeddings()
         # Xác định đường dẫn base dựa trên vị trí file hiện tại (src/rag_engine.py)
         base_dir = os.path.dirname(__file__)
-        kb_path = os.path.join(base_dir, '..', 'knowledge_base', 'durian_diseases.txt')
+        kb_path = os.path.join(base_dir, '..', 'knowledge_base', 'durian_document.txt')
         
         # Thử local path trước
         local_db_path = os.path.join(base_dir, '..', 'knowledge_base', 'chroma_db')

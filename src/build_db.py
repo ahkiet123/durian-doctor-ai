@@ -7,7 +7,7 @@ from rag_engine import build_chroma_db_if_missing
 
 # Đường dẫn
 BASE_DIR = os.path.dirname(__file__)
-KB_PATH = os.path.join(BASE_DIR, '..', 'knowledge_base', 'durian_diseases.txt')
+KB_PATH = os.path.join(BASE_DIR, '..', 'knowledge_base', 'durian_document.txt')
 DB_PATH = os.path.join(BASE_DIR, '..', 'knowledge_base', 'chroma_db')
 
 def main():
