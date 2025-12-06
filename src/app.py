@@ -27,35 +27,24 @@ st.set_page_config(
 # --- VIỆT HÓA FILE UPLOADER ---
 st.markdown("""
 <style>
-    /* Thay thế text "Drag and drop file here" */
-    [data-testid="stFileUploaderDropzone"] div div::before {
-        content: "Kéo thả ảnh vào đây";
-    }
-    [data-testid="stFileUploaderDropzone"] div div span {
-        visibility: hidden;
-    }
-    [data-testid="stFileUploaderDropzone"] div div span::before {
-        content: "Kéo thả ảnh vào đây";
-        visibility: visible;
+    /* Ẩn hoàn toàn text gốc tiếng Anh */
+    [data-testid="stFileUploaderDropzone"] [data-testid="stMarkdownContainer"] {
+        display: none !important;
     }
     
-    /* Thay thế text "Browse files" thành "Chọn tệp" */
-    [data-testid="stFileUploaderDropzone"] button {
-        visibility: hidden;
-    }
-    [data-testid="stFileUploaderDropzone"] button::after {
-        content: "Chọn tệp";
-        visibility: visible;
-        position: absolute;
+    /* Thêm text tiếng Việt thay thế */
+    [data-testid="stFileUploaderDropzone"]::before {
+        content: "Kéo thả ảnh vào đây";
+        display: block;
+        text-align: center;
+        color: #666;
+        font-size: 14px;
+        margin-bottom: 5px;
     }
     
-    /* Thay thế "Limit 200MB per file" */
+    /* Ẩn text size limit gốc */
     [data-testid="stFileUploaderDropzone"] small {
-        visibility: hidden;
-    }
-    [data-testid="stFileUploaderDropzone"] small::before {
-        content: "Giới hạn: JPG, PNG, JPEG";
-        visibility: visible;
+        display: none !important;
     }
 </style>
 """, unsafe_allow_html=True)
