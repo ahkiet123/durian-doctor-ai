@@ -1,3 +1,6 @@
+"""
+Classifier Module - Load model và dự đoán bệnh sầu riêng
+"""
 import os
 import torch
 import torch.nn as nn
@@ -28,7 +31,7 @@ CLASS_NAMES_VI = {
     'yellow_leaf': 'Vàng lá (Yellow Leaf)'
 }
 
-# --- HÀM LOAD MODEL VISION ---
+
 @st.cache_resource
 def load_model():
     """Load model MobileNetV2 đã train"""
@@ -43,8 +46,8 @@ def load_model():
             nn.Linear(512, len(CLASS_NAMES))
         )
         
-        # Đường dẫn model tương đối từ file này (src/model_utils.py)
-        model_path = os.path.join(os.path.dirname(__file__), '..', 'models', 'best_mobilenet_v2.pth')
+        # Đường dẫn model
+        model_path = os.path.join(os.path.dirname(__file__), '..', '..', 'models', 'best_mobilenet_v2.pth')
         
         if os.path.exists(model_path):
             checkpoint = torch.load(model_path, map_location=torch.device('cpu'))
@@ -60,8 +63,9 @@ def load_model():
         print(f"Error loading model: {e}")
         return None, False
 
-# --- HÀM DỰ ĐOÁN & GRAD-CAM ---
+
 def predict_and_gradcam(image, model):
+    """Dự đoán và tạo Grad-CAM heatmap"""
     preprocess = transforms.Compose([
         transforms.Resize((224, 224)),
         transforms.ToTensor(),
