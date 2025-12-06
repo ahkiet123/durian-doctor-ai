@@ -1,4 +1,4 @@
-# ĐỒ ÁN TỐT NGHIỆP: HỆ THỐNG AI CHẨN ĐOÁN BỆNH SẦU RIÊNG & TƯ VẤN ĐIỀU TRỊ (DURIAN DOCTOR)
+# TIỂU LUẬN TỐT NGHIỆP: HỆ THỐNG AI CHẨN ĐOÁN BỆNH SẦU RIÊNG & TƯ VẤN ĐIỀU TRỊ (DURIAN DOCTOR)
 
 ## 1. TỔNG QUAN DỰ ÁN (Project Overview)
 Xây dựng ứng dụng tích hợp (All-in-One) hỗ trợ nông dân trồng sầu riêng với 3 tính năng cốt lõi:
