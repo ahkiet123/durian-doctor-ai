@@ -1,4 +1,4 @@
-# TÀI LIỆU KIẾN THỨC VỀ BỆNH SẦU RIÊNG
+﻿# TÀI LIỆU KIẾN THỨC VỀ BỆNH SẦU RIÊNG
 # Nguồn: Tổng hợp từ Cục Bảo vệ Thực vật, Viện Cây ăn quả Miền Nam
 
 
@@ -339,7 +339,7 @@ LƯU Ý VỀ THUỐC TRỪ SÂU:
 =============================================================================
 
 ### Các giống sầu riêng phổ biến tại Việt Nam:
-1. Monthong (Thái Lan): Cơm vàng, hạt lép, thơm ngọt
+1. Thái (Thái Lan): Cơm vàng, hạt lép, thơm ngọt
 2. Ri6: Giống Việt Nam, cơm vàng, ngọt béo
 3. Chuồng bò: Cơm dày, ít xơ
 4. Musang King (Malaysia): Cơm vàng đậm, đắng nhẹ, giá cao
@@ -449,7 +449,7 @@ Quy trình bón phân chia theo 4 giai đoạn sinh lý của cây:
     * **Lần 1 (Trái bằng quả trứng gà):** Tỉa bỏ trái méo, trái sâu bệnh, trái mọc ở vị trí yếu (đầu cành).
     * **Lần 2 (Trái bằng cái bát/tô):** Chọn lại những trái đẹp, phân bố đều.
     * **Lần 3 (Định hình năng suất):** Chỉ giữ lại số lượng trái phù hợp sức cây.
-* **Số lượng trái tham khảo (Giống Monthong/Ri6):**
+* **Số lượng trái tham khảo (Giống Thái/Ri6):**
     * Cây năm thứ 4-5 (Bói): Giữ 5 - 10 trái.
     * Cây năm thứ 6-8: Giữ 40 - 60 trái.
     * Cây trưởng thành (>10 năm): Có thể giữ 80 - 100 trái (tùy độ sung của cây).
@@ -457,7 +457,7 @@ Quy trình bón phân chia theo 4 giai đoạn sinh lý của cây:
 =============================================================================
 ## HIỆN TƯỢNG SƯỢNG CƠM - CHÁY MÚI (RỐI LOẠN SINH LÝ)
 =============================================================================
-Đây là vấn đề đau đầu nhất, đặc biệt với giống Monthong (DONA). Trái nhìn bên ngoài đẹp nhưng bên trong bị cứng, nhạt, hoặc thâm đen -> Bị thương lái dạt, mất giá.
+Đây là vấn đề đau đầu nhất, đặc biệt với giống Thái (DONA). Trái nhìn bên ngoài đẹp nhưng bên trong bị cứng, nhạt, hoặc thâm đen -> Bị thương lái dạt, mất giá.
 
 ### 1. Hiện tượng "Sượng cơm" (Cơm cứng, sượng trân)
 * **Nguyên nhân:**
@@ -514,7 +514,7 @@ Sầu riêng thường có các đợt rụng trái sinh lý rất mạnh (khi t
 =============================================================================
 ## KỸ THUẬT THỤ PHẤN BỔ SUNG (HAND POLLINATION)
 =============================================================================
-Muốn sầu riêng trái tròn đều, đầy hộc, không bị méo mó (trái heo), bắt buộc phải thụ phấn nhân tạo, đặc biệt là giống Ri6 và Monthong.
+Muốn sầu riêng trái tròn đều, đầy hộc, không bị méo mó (trái heo), bắt buộc phải thụ phấn nhân tạo, đặc biệt là giống Ri6 và Thái.
 
 * **Thời điểm:** Từ 18:00 đến 21:00 đêm (khi hoa nở rộ và bao phấn nứt ra).
 * **Cách làm:**
@@ -530,7 +530,7 @@ Cắt sầu riêng đúng độ già quyết định chất lượng cơm. Cắt
 ### Dấu hiệu nhận biết trái già:
 1.  **Thời gian:** Tính từ khi xổ nhụy.
     * Ri6: 95 - 100 ngày.
-    * Monthong (Thái): 115 - 125 ngày.
+    * Thái (Thái): 115 - 125 ngày.
 2.  **Màu vỏ:** Chuyển từ xanh tươi sang màu vàng nhạt hoặc xám (tùy giống). Gai nở to, đầu gai tà (không nhọn hoắt).
 3.  **Đường chỉ gai:** Các đường chỉ chạy dọc giữa các múi (đường rãnh) nứt ra rõ rệt.
 4.  **Âm thanh (Gõ):** Dùng cán dao gõ vào trái.
@@ -699,3 +699,61 @@ Giá sầu riêng biến động liên tục theo ngày và tùy thuộc vào kh
 
 LƯU Ý QUAN TRỌNG:
 Durian Doctor là trợ lý kỹ thuật, không cập nhật giá realtime. Bà con vui lòng kiểm tra giá thực tế tại thời điểm bán.
+
+
+=============================================================================
+## CÁC GIỐNG SẦU RIÊNG PHỔ BIẾN (TÊN GỌI DÂN DÃ)
+=============================================================================
+
+### 1. Sầu riêng Ri6 (Sầu riêng Sáu Ri) - "Vua sầu riêng Việt"
+* **Nguồn gốc:** Giống nội địa Việt Nam (gốc ở Vĩnh Long).
+* **Đặc điểm nhận dạng:**
+  - Trái hình bầu dục, đít trái thon nhỏ, gai to và dày. Vỏ khi chín vẫn còn xanh hoặc hơi vàng.
+  - Cơm (thịt quả): Màu vàng rực rỡ, rất bắt mắt.
+* **Hương vị:** Cơm khô ráo (cầm không dính tay), dẻo, vị ngọt đậm và béo ngậy. Mùi thơm rất nồng.
+* **Thị trường:** Rất được ưa chuộng để ăn tươi trong nước. Giá cả ổn định. Dễ trồng, năng suất cao.
+
+### 2. Sầu riêng Thái (Monthong / Đô-na) - "Hàng xuất khẩu"
+* **Nguồn gốc:** Giống của Thái Lan.
+* **Đặc điểm nhận dạng:**
+  - Trái to (3 - 5kg), hình quả trứng dài, đầu gai nhọn. Vỏ mỏng.
+  - Cơm: Màu vàng nhạt (màu mỡ gà), cơm rất dày.
+* **Hương vị:** Vị ngọt thanh (không gắt), béo vừa phải, không quá nồng. Cơm ráo hoảnh.
+* **Thị trường:** Đây là giống chủ lực để xuất khẩu sang Trung Quốc vì trái to, bảo quản được lâu sau thu hoạch (để được 7-10 ngày). Giá bán thường cao hơn Ri6.
+
+### 3. Sầu riêng Chuồng Bò - "Giống xưa kén người ăn"
+* **Nguồn gốc:** Giống nội địa cũ (Miền Tây).
+* **Đặc điểm nhận dạng:**
+  - Trái nhỏ (khoảng 1 - 2.5kg), hình hơi bầu bầu giống cái thùng. Vỏ mỏng, gai to.
+  - Cơm: Màu vàng nhạt, mềm nhão (không khô ráo như Ri6).
+* **Hương vị:** Ngọt vừa nhưng hậu vị rất béo (béo ngậy như bơ). Dành cho người sành ăn thích vị béo.
+* **Lưu ý:** Hiện nay ít người trồng kinh tế vì trái nhỏ, hạt to, năng suất thấp.
+
+### 4. Sầu riêng Musang King (Vua Đắng)
+* **Nguồn gốc:** Nhập từ Malaysia.
+* **Đặc điểm nhận dạng:**
+  - Trái hình bầu dục, dưới đáy trái có hình ngôi sao 5 cánh rõ rệt (rất dễ nhận biết).
+  - Cơm: Màu vàng đậm như nghệ, hạt lép hoàn toàn (hạt lép kẹp).
+* **Hương vị:** Dẻo mịn, không có xơ. Vị rất đặc biệt: Ngọt đậm đà nhưng có hậu nhẫn đắng (đắng nhẹ) và mùi thơm cực mạnh.
+* **Thị trường:** Giá rất cao, thường bán cho khách cao cấp. Cây khó chăm sóc hơn Ri6 và Thái.
+
+### 5. Sầu riêng Gai Đen (O-chi / Black Thorn) - "Hàng đại gia"
+* **Nguồn gốc:** Nhập từ Malaysia.
+* **Đặc điểm nhận dạng:**
+  - Trái tròn vo như quả banh. Gai nhỏ và có màu sẫm (hơi đen). Dưới đít trái lõm vào sâu (giống rốn), không có mũi nhọn.
+  - Cơm: Màu cam đỏ (hoặc vàng cam đậm), múi to đầy đặn.
+* **Hương vị:** Cơm mịn như kem, không xơ, ngọt thanh, tan trong miệng.
+* **Thị trường:** Hiện là giống có giá đắt nhất thị trường.
+
+### 6. Sầu riêng Khổ Qua Xanh
+* **Nguồn gốc:** Giống nội địa xưa (Tiền Giang).
+* **Đặc điểm:** Trái dài, gai nhọn chi chít giống trái khổ qua. Cơm ướt, hạt rất to.
+* **Hương vị:** Ngọt vừa, hơi nhẫn đắng (giống khổ qua), mùi thơm nồng.
+* **Thình trạng:** Hiện nay rất ít trồng, chủ yếu để làm gốc ghép vì cây sinh trưởng cực khỏe.
+
+=============================================================================
+## LỜI KHUYÊN CHỌN GIỐNG CHO BÀ CON
+=============================================================================
+1. **Muốn bán xuất khẩu, số lượng lớn:** Trồng **Sầu riêng Thái (Monthong)**. Cây khỏe, trái to, thương lái Trung Quốc rất chuộng.
+2. **Muốn bán nội địa, dễ chăm sóc:** Trồng **Ri6**. Cây dễ ra hoa, đậu trái, bà con Việt Nam rất thích ăn.
+3. **Muốn trồng "làm của", bán giá cao:** Trồng xen thêm **Musang King** hoặc **Gai Đen**. Tuy nhiên kỹ thuật chăm sóc phải cao tay, cây hay bị nứt thân xì mủ.
