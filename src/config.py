@@ -30,4 +30,4 @@ def setup_gemini():
 
 def get_gemini_model():
     """Lấy Gemini model instance"""
-    return genai.GenerativeModel('gemini-2.0-flash')
+    return genai.GenerativeModel('gemini-1.5-flash')

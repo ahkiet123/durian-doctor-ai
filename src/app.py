@@ -37,11 +37,11 @@ def main():
     # Quick stats (nếu có)
     col1, col2, col3 = st.columns(3)
     with col1:
-        st.metric("🦠 Loại bệnh nhận diện", "11")
+        st.metric(" Loại bệnh nhận diện", "11")
     with col2:
-        st.metric("🤖 Model AI", "MobileNetV2")
+        st.metric(" Model AI", "MobileNetV2")
     with col3:
-        st.metric("💬 Chatbot", "Gemini 2.0")
+        st.metric(" Chatbot", "Gemini 1.5 Flash")
     
     # Footer
     render_footer()

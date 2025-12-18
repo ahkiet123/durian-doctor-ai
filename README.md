@@ -5,15 +5,13 @@
 ![PyTorch](https://img.shields.io/badge/PyTorch-EE4C2C?style=for-the-badge&logo=pytorch&logoColor=white)
 ![Gemini](https://img.shields.io/badge/Gemini-8E75B2?style=for-the-badge&logo=googlebard&logoColor=white)
 
-> **Tiểu luận tốt nghiệp - Hệ thống AI chẩn đoán và tư vấn bệnh trên cây sầu riêng**  
-> **Dev:** Đặng Anh Kiệt
-
+> **Tiểu luận tốt nghiệp - Hệ thống AI chẩn đoán bệnh trên lá sầu riêng và tư vấn phác đồ điều trị phù hợp **
+> 
 ---
 
-## 🚀 Demo Trực Tuyến
-Trải nghiệm ngay ứng dụng tại đây:
+## Link Demo Trực Tuyến:
 
-👉 **[Durian Doctor AI - Live App](https://durian-doctor-ai.streamlit.app/)**
+**[Durian Doctor AI - Live App](https://durian-doctor-ai.streamlit.app/)**
 
 (Lưu ý: Tính năng chẩn đoán hình ảnh đang được phát triển, hiện tại chưa thể dùng được. Chatbot đã hoạt động đầy đủ với dữ liệu chuyên sâu)
 
@@ -25,9 +23,9 @@ Trải nghiệm ngay ứng dụng tại đây:
 
 ### ✨ Tính năng nổi bật
 
-*   📸 **Chẩn đoán bệnh:** Phân loại bệnh trên lá, thân, trái sầu riêng (MobileNetV2).
-*   🔍 **XAI:** Hiển thị vùng bệnh trên ảnh bằng kỹ thuật Grad-CAM.
-*   💬 **Chatbot Chuyên gia:** Trả lời câu hỏi, tư vấn thuốc và phác đồ điều trị dựa trên tài liệu chuẩn (RAG + Gemini).
+*   📸 **Chẩn đoán bệnh:** Phân loại bệnh trên lá, thân, trái sầu riêng (sử dụng mô hình phân loại mobilenetv2 của google).
+*   🔍 **XAI:** Hiển thị vùng bệnh trên ảnh bằng cách đặt heatmap lên trên ảnh gốc, cho thấy vùng mà AI tập trung sự chú ý và đưa ra dự đoán bằng kỹ thuật grad-CAM (gradiant weighted Class Activision Map)
+*   💬 **Chatbot Chuyên gia:** Trả lời câu hỏi, tư vấn thuốc và phác đồ điều trị dựa trên cơ sở trí thức được cung cấp, sử dụng kỹ thuật RAG(retrieval augmented generative) + LLM (Gemini 1.5 flash)
 *   📚 **Minh bạch:** Trích dẫn nguồn tài liệu tham khảo cho từng câu trả lời.
 
 ---
@@ -39,10 +37,10 @@ Trải nghiệm ngay ứng dụng tại đây:
 │   ├── app.py                 # Entry point
 │   ├── config.py              # Cấu hình chung
 │   ├── pages/                 # Multi-page Streamlit
-│   │   ├── 1_📷_Chẩn_Đoán.py
-│   │   ├── 2_💬_Hỏi_Đáp.py
-│   │   ├── 3_📊_Lịch_Sử.py
-│   │   └── 4_🖼️_Thư_Viện.py
+│   │   ├── Chẩn_Đoán.py
+│   │   ├── Hỏi_Đáp.py
+│   │   ├── Lịch_Sử.py
+│   │   └── Thư_Viện.py
 │   ├── model/                 # AI Model
 │   │   ├── classifier.py      # Load & predict
 │   │   └── gradcam.py         # Explainable AI
@@ -75,8 +73,6 @@ streamlit run src/app.py
 
 ---
 
-## 👨‍💻 Tác giả
-
 **Đặng Anh Kiệt** | [GitHub](https://github.com/ahkiet123)
 
-© 2025 - Tiểu luận tốt nghiệp
+

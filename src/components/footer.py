@@ -14,13 +14,13 @@ def render_footer():
             🌳 Durian Doctor AI
         </p>
         <p style='font-size: 14px; margin-bottom: 8px;'>
-            Hệ thống AI hỗ trợ chẩn đoán bệnh sầu riêng — Tiểu Luận Tốt Nghiệp
+            Hệ thống AI hỗ trợ chẩn đoán bệnh trên lá sầu riêng và tư vấn phác đồ điều trị phù hợp
         </p>
         <p style='font-size: 13px; margin-bottom: 12px;'>
             Phát triển bởi <b style='color: #333;'>Đặng Anh Kiệt</b> &copy; 2025
         </p>
         <p style='font-size: 12px; color: #999;'>
-            <i>Powered by <b>MobileNetV2</b> • <b>Grad-CAM</b> • <b>Google Gemini</b> • <b>Streamlit</b></i>
+            <i> <b>MobileNetV2</b> • <b>Grad-CAM</b> • <b>Google Gemini</b> • <b>Streamlit</b></i>
         </p>
     </div>
     """,
