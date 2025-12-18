@@ -3,7 +3,7 @@
 ![Streamlit](https://img.shields.io/badge/Streamlit-FF4B4B?style=for-the-badge&logo=Streamlit&logoColor=white)
 ![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
 ![PyTorch](https://img.shields.io/badge/PyTorch-EE4C2C?style=for-the-badge&logo=pytorch&logoColor=white)
-![Gemini](https://img.shields.io/badge/Gemini-8E75B2?style=for-the-badge&logo=googlebard&logoColor=white)
+![Groq](https://img.shields.io/badge/Groq-000000?style=for-the-badge&logo=lightning&logoColor=white)
 
 > **Tiểu luận tốt nghiệp - Hệ thống AI chẩn đoán bệnh trên lá sầu riêng và tư vấn phác đồ điều trị phù hợp **
 > 
@@ -25,7 +25,7 @@
 
 *   📸 **Chẩn đoán bệnh:** Phân loại bệnh trên lá, thân, trái sầu riêng (sử dụng mô hình phân loại mobilenetv2 của google).
 *   🔍 **XAI:** Hiển thị vùng bệnh trên ảnh bằng cách đặt heatmap lên trên ảnh gốc, cho thấy vùng mà AI tập trung sự chú ý và đưa ra dự đoán bằng kỹ thuật grad-CAM (gradiant weighted Class Activision Map)
-*   💬 **Chatbot Chuyên gia:** Trả lời câu hỏi, tư vấn thuốc và phác đồ điều trị dựa trên cơ sở trí thức được cung cấp, sử dụng kỹ thuật RAG(retrieval augmented generative) + LLM (Gemini 1.5 flash)
+*   💬 **Chatbot Chuyên gia:** Trả lời câu hỏi, tư vấn thuốc và phác đồ điều trị dựa trên cơ sở trí thức được cung cấp, sử dụng kỹ thuật RAG(retrieval augmented generative) + LLM (Groq Llama 3.3 70B)
 *   📚 **Minh bạch:** Trích dẫn nguồn tài liệu tham khảo cho từng câu trả lời.
 
 ---
@@ -65,7 +65,7 @@ cd durian-doctor-ai
 pip install -r requirements.txt
 
 # Config (.env)
-GOOGLE_API_KEY=your_api_key_here
+GROQ_API_KEY=your_api_key_here
 
 # Run
 streamlit run src/app.py

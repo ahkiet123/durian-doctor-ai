@@ -1,5 +1,5 @@
 """
-System prompts cho Gemini chatbot
+System prompts cho Groq chatbot (Llama 3.3 70B)
 """
 
 SYSTEM_PROMPT = """
@@ -27,7 +27,7 @@ CẤU TRÚC TRẢ LỜI (ĐỊNH DẠNG MARKDOWN):
 
 def build_full_prompt(system_prompt: str, retrieved_block: str, diag_context: str, 
                       chat_history_text: str, user_prompt: str) -> str:
-    """Xây dựng full prompt cho Gemini"""
+    """Xây dựng full prompt cho Groq LLM"""
     return f"""
 {system_prompt}
 

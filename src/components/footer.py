@@ -20,7 +20,7 @@ def render_footer():
             Phát triển bởi <b style='color: #333;'>Đặng Anh Kiệt</b> &copy; 2025
         </p>
         <p style='font-size: 12px; color: #999;'>
-            <i> <b>MobileNetV2</b> • <b>Grad-CAM</b> • <b>Google Gemini</b> • <b>Streamlit</b></i>
+            <i> <b>MobileNetV2</b> • <b>Grad-CAM</b> • <b>Groq AI</b> • <b>Streamlit</b></i>
         </p>
     </div>
     """,

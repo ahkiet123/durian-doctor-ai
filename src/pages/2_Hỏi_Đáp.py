@@ -3,7 +3,6 @@ Page 2: Hỏi đáp AI (Chatbot RAG)
 Giao diện chat fullscreen giống các AI chat hiện đại
 """
 import streamlit as st
-import google.generativeai as genai
 import sys
 import os
 
@@ -12,10 +11,13 @@ sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 
 from rag_engine import load_vector_db
 from prompts.system_prompt import SYSTEM_PROMPT, build_full_prompt
-from config import setup_gemini, get_gemini_model
+from config import setup_gemini, get_gemini_client, get_gemini_model_name
 
 # Setup
-GOOGLE_API_KEY = setup_gemini()
+GROQ_API_KEY = setup_gemini()  # Tên hàm giữ nguyên để tương thích
+groq_client = get_gemini_client()  # Tên giữ nguyên nhưng trả về Groq client
+
+
 
 # Load vector DB
 vector_db = load_vector_db()
@@ -53,8 +55,8 @@ if prompt:
     
     # Xử lý response
     with st.chat_message("assistant"):
-        if not GOOGLE_API_KEY:
-            st.warning("⚠️ Vui lòng cấu hình API Key trong file .env")
+        if not GROQ_API_KEY:
+            st.warning("⚠️ Vui lòng cấu hình GROQ_API_KEY trong file .env")
         else:
             thinking_container = st.empty()
             
@@ -126,22 +128,32 @@ if prompt:
                 chat_history_text, prompt
             )
             
-            # === STEP 3: Gọi Gemini ===
+            # === STEP 3: Gọi Groq LLM ===
             if show_thinking:
                 with thinking_container.container():
                     with st.status("Truy vấn RAG Database", expanded=False, state="complete"):
                         st.write("✅ Hoàn tất")
                     with st.status("Xây dựng ngữ cảnh", expanded=False, state="complete"):
                         st.write("✅ Hoàn tất")
-                    with st.status("🤖 Gemini đang suy nghĩ...", expanded=True):
+                    with st.status("🤖 Groq AI đang suy nghĩ...", expanded=True):
                         st.write("💭 Phân tích câu hỏi và tài liệu...")
             
             try:
-                model_gemini = get_gemini_model()
-                response = model_gemini.generate_content(full_prompt)
-                bot_reply = response.text
+                # Groq API: Sử dụng OpenAI-compatible chat completions
+                model_name = get_gemini_model_name()
+                response = groq_client.chat.completions.create(
+                    model=model_name,
+                    messages=[
+                        {"role": "user", "content": full_prompt}
+                    ],
+                    temperature=0.7,
+                    max_tokens=2048
+                )
+                bot_reply = response.choices[0].message.content
             except Exception as e:
-                bot_reply = f"⚠️ Lỗi kết nối Google Gemini: {e}"
+                bot_reply = f"⚠️ Lỗi kết nối Groq API: {e}"
+
+
             
             # === Hoàn tất ===
             if show_thinking:
@@ -150,7 +162,7 @@ if prompt:
                         st.write("✅ Hoàn tất")
                     with st.status("Xây dựng ngữ cảnh", expanded=False, state="complete"):
                         st.write("✅ Hoàn tất")
-                    with st.status("🤖 Gemini đang suy nghĩ...", expanded=False, state="complete"):
+                    with st.status("🤖 Groq AI đang suy nghĩ...", expanded=False, state="complete"):
                         st.write("✅ Đã tạo câu trả lời")
                     st.markdown("---")
             else:

@@ -41,7 +41,7 @@ def main():
     with col2:
         st.metric(" Model AI", "MobileNetV2")
     with col3:
-        st.metric(" Chatbot", "Gemini 1.5 Flash")
+        st.metric(" Chatbot", "Groq Llama 3.3")
     
     # Footer
     render_footer()
